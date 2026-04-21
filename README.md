@@ -1,2 +1,2 @@
 # Silent-Exposure
-Hands-on cybersecurity project demonstrating offensive security techniques and system analysis
+Proyecto práctico de ciberseguridad que demuestra técnicas de seguridad ofensiva y análisis de sistemas
