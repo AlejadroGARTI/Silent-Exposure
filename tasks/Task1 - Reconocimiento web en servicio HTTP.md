@@ -35,13 +35,11 @@ HTTP funciona en el puerto 80 y permite solicitar y recibir páginas web desde e
 ---
 
 ## 3) ¿Cuál es el título de la página?
-
 El título es Security Warning Simulation que se puede ver dentro del comando nmap que se ejecutó previamente, específicamente en la línea http-title: Security Warning Simulation.
 
 ---
 
 ## 4) ¿Cuál es el Error code?
-
 El código de error es SEC_ERROR_UNKNOWN_ISSUER.
 Este error se puede observar al acceder desde el navegador a la dirección http[:]//192.168.1.50.
 Una vez dentro de la página, el navegador muestra el aviso “Warning: Potential Security Risk Ahead”.
@@ -50,7 +48,6 @@ Al acceder a la sección Advanced, se puede visualizar el error específico.
 ---
 
 ## 5) ¿Cuál es la razón del error?
-
 Al igual que en el punto 4, esta información se puede observar en la sección Advanced
 
 - Host: 10.128.157.53
@@ -62,11 +59,9 @@ La explicación es que el host 10.128.157.53 está utilizando el puerto 443, que
 ---
 
 ## 6) ¿Cómo se llama el fichero descargado?
-
 El fichero descargado puede obtenerse al acceder a la opción Advanced y seleccionar “Accept the Risk and Continue”, lo que permite entrar en la página pese a las advertencias del navegador. Este tipo de acciones debe realizarse únicamente en entornos controlados, como máquinas virtuales de pruebas o laboratorios de ciberseguridad. Al continuar, la página descarga automáticamente un fichero, lo cual puede ser peligroso en un entorno real, ya que podría tratarse de software malicioso, scripts o archivos diseñados para explotar vulnerabilidades del sistema, comprometer la seguridad del equipo o ejecutar acciones sin el consentimiento del usuario.
 
 ---
 
 ## 7) ¿Cuál es la FLAG?
-
 La FLAG es Bienvenidos a Jurassic Park, que se puede observar en la página, a la cual se ha accedido mediante los pasos ejecutados previamente.
