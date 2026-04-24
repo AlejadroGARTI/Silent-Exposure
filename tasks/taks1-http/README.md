@@ -1,6 +1,6 @@
 # Task 1 HTTP
 
-## Información General
+## Información general
 - **Plataforma:** TryHackMe  
 - **IP objetivo:** `10.128.157.53`  
 - **Herramientas utilizadas:** Nmap, Navegador web  
@@ -17,7 +17,7 @@ El comando nmap -sC -sV 10.128.157.53 se utiliza para escanear un objetivo en bu
 
 ---
 
-## 1) ¿A través de que puerto se comunica el servidor?
+## 1) ¿A través de qué puerto se comunica el servidor?
 Resultados relevantes:
 | PORT   | STATE | SERVICE | VERSION 
 |--------|-------|---------|---------
@@ -36,9 +36,9 @@ HTTP funciona en el puerto 80 y permite solicitar y recibir páginas web desde e
 
 ---
 
-## 3) ¿Cúal es el título de la página?
+## 3) ¿Cuál es el título de la página?
 
-El título es Security Warning Simulation que se puede ver dentro del comando nmap que se ejecutó previamente, específicamente en la linea http-title: Security Warning Simulation.
+El título es Security Warning Simulation que se puede ver dentro del comando nmap que se ejecutó previamente, específicamente en la línea http-title: Security Warning Simulation.
 
 ---
 
@@ -53,7 +53,7 @@ Al acceder a la sección Advanced, se puede visualizar el error específico.
 
 ## 5) ¿Cuál es la razón del error?
 
-Al igual que en el punto 4, esta información se puede eobservar en la sección advanced
+Al igual que en el punto 4, esta información se puede observar en la sección Advanced
 
 - Host: 10.128.157.53
 - Port: 443
@@ -69,6 +69,6 @@ El fichero descargado puede obtenerse al acceder a la opción Advanced y selecci
 
 ---
 
-## 7) ¿Cúal es la FLAG?
+## 7) ¿Cuál es la FLAG?
 
-La FLAG es Bienvenidos a Jurassic Park, que se puede observar en la página a la cual se ha accedido mediante los pasos ejecutados previamente.
+La FLAG es Bienvenidos a Jurassic Park, que se puede observar en la página, a la cual se ha accedido mediante los pasos ejecutados previamente.
