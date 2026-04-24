@@ -12,7 +12,9 @@ Se
 ---
 
 ## 1) ¿Cuantos ficheros tiene el servidor con dirb?
-Una vez que se obtiene el fichero, se procede a usar dirb http://10.129.183.158 /home/kali/Downloads/wordlist.txt
+Una vez que se obtiene el fichero, se procede a usar 
+
+dirb http[:]//10.129.183.158 /home/kali/Downloads/wordlist.txt
 
 En este caso DIRB encontró 17 rutas accesibles en el servidor mediante un proceso de fuerza bruta de directorios y archivos usando una wordlist(fichero descargado previamente). Estas rutas representan posibles directorios o ficheros expuestos a través de HTTP, pero no reflejan el sistema de archivos completo del servidor, sino únicamente lo que está públicamente accesible desde la web.
 
