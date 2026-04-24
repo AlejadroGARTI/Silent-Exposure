@@ -1,4 +1,4 @@
-# Task 2 Fuzzing
+# Task 2 Fuzzing de directorios web
 
 ## Información general 
 - **Herramientas utilizadas:**  
