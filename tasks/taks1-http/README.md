@@ -19,10 +19,11 @@ El comando nmap -sC -sV 10.128.157.53 se utiliza para escanear un objetivo en bu
 
 ## 1) ¿A través de que puerto se comunica el servidor?
 Resultados relevantes:
-PORT   STATE SERVICE VERSION
-22/tcp open  ssh
-80/tcp open  http    lighttpd 1.4.35
-             
+| PORT   | STATE | SERVICE | VERSION 
+|--------|-------|---------|---------
+| 22/tcp | open  | ssh     | OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 
+| 80/tcp | open  | http    | lighttpd 1.4.35 
+
 El puerto 80/tcp está abierto y ejecuta un servicio HTTP usando el servidor lighttpd 1.4.35.
 Esto significa que el objetivo está alojando una página web accesible desde el navegador y al conectarse, el servidor muestra el título “Security Warning Simulation”, lo que indica que probablemente se trata de una página de prueba o un entorno simulado de seguridad.
 
