@@ -38,7 +38,7 @@ HTTP funciona en el puerto 80 y permite solicitar y recibir páginas web desde e
 
 ## 3) ¿Cúal es el título de la página?
 
-El título es Security Warning Simulation que se puede ver dentro del comando nmap que se ejecutpo previamente, específicamente en la linea http-title: Security Warning Simulation.
+El título es Security Warning Simulation que se puede ver dentro del comando nmap que se ejecutó previamente, específicamente en la linea http-title: Security Warning Simulation.
 
 ---
 
