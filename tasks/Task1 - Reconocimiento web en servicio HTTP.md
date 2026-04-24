@@ -1,8 +1,6 @@
 # Task 1 HTTP
 
-## Información general
-- **Plataforma:** TryHackMe  
-- **IP objetivo:** `10.128.157.53`  
+## Información general 
 - **Herramientas utilizadas:** Nmap, Navegador web  
 
 ---
