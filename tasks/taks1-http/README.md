@@ -53,6 +53,14 @@ Al acceder a la sección Advanced, se puede visualizar el error específico.
 
 ## 5) ¿Cuál es la razón del error?
 
+Al igual que en el punto 4, esta información se pued eobservar en la sección advanced
+
+- Host: 10.128.157.53
+- Port: 443
+- Reason: Self-signed / untrusted certificate
+
+La explicación es que el host 10.128.157.53 está utilizando el puerto 443, que corresponde al tráfico HTTPS (cifrado). Sin embargo, el motivo del aviso de seguridad es que el servidor presenta un certificado digital auto-firmado o no confiable. Esto significa que el certificado no ha sido emitido por una autoridad de certificación reconocida, por lo que el navegador no puede verificar la identidad del servidor, generando una alerta de seguridad.
+
 ---
 
 ## 6) ¿Cómo de llama el fichero descargado?
