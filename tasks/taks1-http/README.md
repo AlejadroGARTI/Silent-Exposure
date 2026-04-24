@@ -53,7 +53,7 @@ Al acceder a la sección Advanced, se puede visualizar el error específico.
 
 ## 5) ¿Cuál es la razón del error?
 
-Al igual que en el punto 4, esta información se pued eobservar en la sección advanced
+Al igual que en el punto 4, esta información se puede eobservar en la sección advanced
 
 - Host: 10.128.157.53
 - Port: 443
@@ -65,6 +65,10 @@ La explicación es que el host 10.128.157.53 está utilizando el puerto 443, que
 
 ## 6) ¿Cómo de llama el fichero descargado?
 
+El fichero descargado puede obtenerse al acceder a la opción Advanced y seleccionar “Accept the Risk and Continue”, lo que permite entrar en la página pese a las advertencias del navegador. Este tipo de acciones debe realizarse únicamente en entornos controlados, como máquinas virtuales de pruebas o laboratorios de ciberseguridad. Al continuar, la página descarga automáticamente un fichero, lo cual puede ser peligroso en un entorno real, ya que podría tratarse de software malicioso, scripts o archivos diseñados para explotar vulnerabilidades del sistema, comprometer la seguridad del equipo o ejecutar acciones sin el consentimiento del usuario.
+
 ---
 
 ## 7) ¿Cúal es la FLAG?
+
+La FLAG es Bienvenidos a Jurassic Park, que se puede observar en la página a la cual se ha accedido mediante los pasos ejecutados previamente.
