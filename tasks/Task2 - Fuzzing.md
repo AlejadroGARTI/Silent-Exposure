@@ -19,7 +19,11 @@ En este caso DIRB encontró 17 rutas accesibles en el servidor mediante un proce
 ---
 
 ## 2) ¿Cuantos ficheros tiene el servidor con Gobuster?
-En cambio, con Gobuster, se utilizó el comando "gobuster dir -u http://10.129.183.158 -w /home/kali/Downloads/wordlist.txt" y se enumeraron directorios y archivos en el servidor web y la herramienta identificó múltiples rutas, incluyendo archivos con código fuente y copias de seguridad. Algunas rutas devolvieron código 403 (Forbidden), indicando que existen en el servidor pero no son accesibles directamente. Otras rutas, como security.zip y config.php.bak, devolvieron código 200, lo que indica que son accesibles públicamente y podrían contener información sensible.
+En cambio, con Gobuster, se utilizó el comando 
+
+gobuster dir -u http[:]//10.129.183.158 -w /home/kali/Downloads/wordlist.txt" 
+
+y se enumeraron directorios y archivos en el servidor web y la herramienta identificó múltiples rutas, incluyendo archivos con código fuente y copias de seguridad. Algunas rutas devolvieron código 403 (Forbidden), indicando que existen en el servidor pero no son accesibles directamente. Otras rutas, como security.zip y config.php.bak, devolvieron código 200, lo que indica que son accesibles públicamente y podrían contener información sensible.
 Algunos ejemplos de estas rutas son: 
 - /config.php.bak         (Status: 200) [Size: 2160]
 - /configuration.inc.php~ (Status: 403) [Size: 345]
