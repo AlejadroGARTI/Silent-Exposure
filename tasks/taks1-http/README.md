@@ -45,7 +45,7 @@ El título es Security Warning Simulation que se puede ver dentro del comando nm
 ## 4) ¿Cuál es el Error code?
 
 El código de error es SEC_ERROR_UNKNOWN_ISSUER.
-Este error se puede observar al acceder desde el navegador a la dirección http://192.168.1.50.
+Este error se puede observar al acceder desde el navegador a la dirección http[:]//192.168.1.50.
 Una vez dentro de la página, el navegador muestra el aviso “Warning: Potential Security Risk Ahead”.
 Al acceder a la sección Advanced, se puede visualizar el error específico.
 
