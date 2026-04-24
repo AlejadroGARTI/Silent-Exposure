@@ -1,4 +1,4 @@
-# Task 1 HTTP
+# Task 1 Reconocimiento web en servicio HTTP
 
 ## Información general
 - **Plataforma:** TryHackMe  
