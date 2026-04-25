@@ -27,31 +27,37 @@ gobuster dir -u http[:]//10.129.183.158 -w /home/kali/Downloads/wordlist.txt"
 
 Mediante este se enumeraron directorios y archivos en el servidor web y la herramienta identificó múltiples rutas, incluyendo archivos con código fuente y copias de seguridad. Algunas rutas devolvieron código 403 (Forbidden), indicando que existen en el servidor pero no son accesibles directamente. Otras rutas, como security.zip y config.php.bak, devolvieron código 200, lo que indica que son accesibles públicamente y podrían contener información sensible.
 Algunos ejemplos de estas rutas son: 
-- /config.php.bak         (Status: 200) [Size: 2160]
-- /configuration.inc.php~ (Status: 403) [Size: 345]
-- /configuration~         (Status: 403) [Size: 345]
+- config.php.bak         (Status: 200) [Size: 2160]
+- configuration.inc.php~ (Status: 403) [Size: 345]
+- configuration~         (Status: 403) [Size: 345]
 
 ---
 
 ## 3) ¿Cuál es el código correcto?
-El 
+El código de estado HTTP correcto (éxito) que aparece en los resultados es el 200, el cual se muestra únicamente para los archivos config.php.bak y security.zip. Esto indica que ambos recursos existen en el servidor y son accesibles.
+- config.php.bak       (Status: 200) [Size: 2160]
+- security.zip         (Status: 200) [Size: 2109]
 
 ---
 
 ## 4) ¿Cuál es el código de error?
-El código de error es 
+El código de error predominante en el escaneo es el 403  que significa Forbidden, que aparece en casi todos los archivos listados (por ejemplo, cfg~, config.inc.php~, database.php~, etc...). Este código indica que, aunque el servidor reconoce la existencia de esos archivos, el acceso a ellos está denegado explícitamente, probablemente por configuraciones de permisos o reglas de seguridad.
 
 ---
 
 ## 5) ¿Cuál es la flag para que no muestre los ficheros erróneos en dirb?
-Al 
+El comando utilizado para que no se muestren estos ficheros es el -N 403. Con este comando, dirb realizará el escaneo de manera normal, pero no te mostrará en la lista final ningún directorio o archivo que devuelva un error 403, limpiando así la salida y permitiendo identificar más fácilmente los recursos a los que realmente se tiene acceso.
 
 ---
 
 ## 6) ¿Cuál es el tamaño en bytes de fichero de mayor tamaño?
-El 
+El fichero de mayor tamaño es:
+- config.php.bak        (Status: 200)   [Size: 2160]
+Esto se debe a que al ser un recurso real y accesible que contienen datos legítimos del servidor, su tamaño naturalmente es mayor porque almacena información útil y potencialmente sensible. Por lo tanto, el mayor tamaño de este archivo refleja que el servidor está sirviendo contenido real en lugar de una página de error estándar cuyo peso es de 345 bytes, lo que lo convierte en un objetivo de mayor interés para un atacante o auditor de seguridad.
 
 ---
 
 ## 7) ¿Cómo se llama el fichero que tiene un tamaño inferior al mayor?
-La 
+El segundo fichero de mayor tamaño es: 
+- security.zip         (Status: 200) [Size: 2109]
+Y al igual que el fichero previamente descrito, tiene un tamaño mayor al ser un archivo quie contiene datos dentro del servidor.
