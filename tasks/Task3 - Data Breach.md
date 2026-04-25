@@ -21,6 +21,7 @@ Se ve afectada la Confidencialida, ya que implica un acceso no autorizado a info
 La intranet es una red privada interna de una organización, accesible solo para empleados autorizados, que en este caso se llama: ingen_park_ops.
 
 Este y otros datos listados más adelante se pueden ver en formato de texto plano de la siguiente manera: 
+
 // ** Server settings - Main Park Operations ** //
 /** The name of the for InGen Intranet */
 define('NAME', 'ingen_park_ops');
