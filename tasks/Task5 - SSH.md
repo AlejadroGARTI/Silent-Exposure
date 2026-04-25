@@ -60,7 +60,7 @@ Esta basado en securityos, ya que mediante el comando cat /etc/os-release, obten
 - ID_LIKE=securityos
 - PRETTY_NAME="InGenOS 1.0.4 LTS"
 - VERSION_ID="1.0.4"
-- HOME_URL="http[:]//www.jurassicpark.com/"
+- HOME_URL="http[:]//www[.]jurassicpark.com/"
 - SUPPORT_URL="http[:]//help.ingen.com/"
 - BUG_REPORT_URL="http[:]//bugs.ingen.com/"
 
