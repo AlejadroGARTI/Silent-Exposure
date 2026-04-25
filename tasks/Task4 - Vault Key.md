@@ -13,11 +13,11 @@
 ---
 
 ## 1) ¿Cuál es la contraseña del fichero?
-La contraseña del fichero es "Wht3_Rbt_0bj_1993!", la cual fue recuperada de config.php.bak, demostrando de esta forma un grave problema de seguridad, en donde los únicos ficheros que están disponibles, presentan clave y contraseña, por lo que al acceder a uno se accede al otro automáticamente, sin ninguna necesidad de usar otras herramientas de fuerza bruta.
+La contraseña del fichero es "Wht3_Rbt_0bj_1993!", la cual fue recuperada de config.php.bak, lo que demuestra un grave problema de seguridad, ya que los únicos ficheros disponibles comparten credenciales, permitiendo el acceso entre ellos sin necesidad de otras herramientas.
 
 ---
 
-## 2) ¿En que está basado el fichero que se ha obtenido?
+## 2) ¿En qué está basado el fichero que se ha obtenido?
 El 
 
 ---
@@ -30,12 +30,12 @@ El inicio de la clave pública se puede visualizar mediante "less public_key.asc
 mQGNBGnjWv4BDACqYvlAtc9o3Lve1YOUvgHphHCKyCLIy2swF1PDE0FR39n15H01
 PiJ4i/60nQzU6UG+kiRO3p2D6TUzXVK+3acnaO9hc....
 
-Una public key o clave pública es una clave criptográfica que forma parte de la criptografía asimétrica y puede compartirse libremente con otras persona y su función principal es permitir que otros cifren mensajes destinados a ti o verifiquen firmas digitales que se hayan creado con una clave privada. Aunque cualquiera puede usarla, solo la clave privada correspondiente puede descifrar la información o generar la firma válida.
+Una public key o clave pública es una clave criptográfica que forma parte de la criptografía asimétrica y puede compartirse libremente con otras personas y su función principal es permitir que otros cifren mensajes destinados a ti o verifiquen firmas digitales que se hayan creado con una clave privada. Aunque cualquiera puede usarla, solo la clave privada correspondiente puede descifrar la información o generar la firma válida.
 
 ---
 
 ## 4) ¿Qué algoritmo de cifrado utiliza la clave pública "Public Key"?
-La clave pública utiliza el algoritmo de cifrado rsa3072. Este es un algoritmo de cifrado de clave pública basado en RSA, uno de los sistemas más usados en criptografía asimétrica.
+La clave pública utiliza el algoritmo de cifrado rsa3072. 
 
 En este caso, el 3072 indica el tamaño de la clave en bits, lo que significa que es una clave muy robusta y segura para cifrar información o firmar digitalmente.
 
