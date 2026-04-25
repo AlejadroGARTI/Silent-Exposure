@@ -13,7 +13,7 @@
 ---
 
 ## 1) ¿Cuál es la contraseña del fichero?
-La contraseña del fichero es "Wht3_Rbt_0bj_1993!", la cual fue recuperada de config.php.bak, demostradno de esta forma un grave problema de seguridad, en donde los únicos ficheros que están disponibles, presentan clave y contraseña, por lo que al acceder a uno se accede al otro automáticamente, sin ninguna necesidad de usar otras herramientas de fuerza bruta.
+La contraseña del fichero es "Wht3_Rbt_0bj_1993!", la cual fue recuperada de config.php.bak, demostrando de esta forma un grave problema de seguridad, en donde los únicos ficheros que están disponibles, presentan clave y contraseña, por lo que al acceder a uno se accede al otro automáticamente, sin ninguna necesidad de usar otras herramientas de fuerza bruta.
 
 ---
 
