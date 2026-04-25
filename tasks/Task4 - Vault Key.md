@@ -6,8 +6,8 @@
 ---
 
 ## Investigación Inicial
-1)
-2)
+1) Descargamos el fichero mediante: wget http[:]//10.130.183.40/security.zip
+2) Lo descomprimimos usando la clave recuperada del 
 
 ---
 
