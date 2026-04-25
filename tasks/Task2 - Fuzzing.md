@@ -7,7 +7,7 @@
 
 ## Investigación Inicial
 
-Se 
+Se realizó un reconocimiento inicial sobre el servidor web objetivo para identificar posibles puntos de entrada y recursos expuestos. Para ello, se emplearon herramientas de fuzzing de directorios como dirb y gobuster, las cuales permiten descubrir rutas ocultas o no enlazadas directamente desde la página principal. 
 
 ---
 
