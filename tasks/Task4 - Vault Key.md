@@ -8,6 +8,7 @@
 ## Investigación Inicial
 1) Descargamos el fichero mediante: wget http[:]//10.130.183.40/security.zip
 2) Lo descomprimimos usando la clave recuperada del fichero config.php.bak
+3) Obtenemos la información mediante gpg --import --import-options show-only public_key.asc
 
 ---
 
@@ -55,6 +56,6 @@ uid: Dennis Nedry
 ---
 
 ## 7) ¿Cuál es su correo?
-El correo asociado es el que está vinculado a esa identidad dentro de la clave pública: dnedry@ingen.com
+El correo asociado es el que está vinculado a esa identidad dentro de la clave pública: dnedry@ingen[.]com
 
 
