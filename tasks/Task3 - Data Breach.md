@@ -7,8 +7,11 @@
 
 ## Investigación Inicial
 
-Se analizan el primer fichero encontrado en el paso anterior.
-- Para config.php.bak usamos el comando: curl http[:]//10.130.183.40/config.php.bak, que en este caso transfiere los datos a través del protocolo HTTP desde la página web. Mostrando de esta forma toda la información del fichero.
+Se analiza el primer fichero encontrado en el paso anterior, por lo que para config.php.bak usamos el comando: 
+
+curl http[:]//10.130.183.40/config.php.bak 
+
+En este caso transfiere los datos a través del protocolo HTTP desde la página web. Mostrando de esta forma toda la información del fichero.
 
 ---
 
