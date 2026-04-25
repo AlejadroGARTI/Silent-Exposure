@@ -6,8 +6,8 @@
 ---
 
 ## Investigación Inicial
-
-Se 
+- 1)
+- 2)
 
 ---
 
