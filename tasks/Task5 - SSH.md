@@ -12,12 +12,15 @@ Se
 ---
 
 ## 1) ¿Cuál es el admistrador del sistema?
-Re
+El administrador es dnedry, mismo usuario que encontramos inspeccionando el .bak, en el campo: 
+
+/** Server username */
+define('USER', 'dnedry');
 
 ---
 
 ## 2) ¿Cuál es su contraseña?
-El 
+Se identificó que la clave pública GPG contenía información sensible en su campo UID, incluyendo una posible contraseña (L3Dodgson5). Dado que los metadatos de las claves públicas son accesibles sin autenticación, esto representa una fuga de credenciales. Esta mala práctica de gestión de secretos permitió el acceso por SSH sin necesidad de realizar ataques criptográficos, evidenciando un fallo humano.
 
 ---
 
