@@ -22,7 +22,7 @@ El
 ---
 
 ## 3) ¿Cuál es el inicio de la clave pública?
-El inicio de la clave pública se puede visualziart mediante "less public_key.asc", en donde se puede observar: 
+El inicio de la clave pública se puede visualizar mediante "less public_key.asc", en donde se puede observar: 
 
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
@@ -43,10 +43,14 @@ En este caso, el 3072 indica el tamaño de la clave en bits, lo que significa qu
 ## 5) ¿Cuándo fue creada?
 Fue creada el 18/04/2026.
 
+pub: rsa3072 2026-04-18 [SC]
+
 ---
 
 ## 6) ¿A quién pertenece?
 Pertenece a Dennis Nedry
+
+uid: Dennis Nedry
 
 ---
 
