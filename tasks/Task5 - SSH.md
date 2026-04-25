@@ -69,6 +69,8 @@ Esta basado en securityos, ya que mediante el comando cat /etc/os-release, obten
 ## 9) ¿A qué grupos pertenece el usuario?
 El usuario pertenece a los grupos: uid=1000(dnedry) gid=1000(dnedry) groups=1000(dnedry),4(adm),24(cdrom),30(dip),46(plugdev),114(lpadmin),115(sambashare)
 
+Saber esto es crucial para definir las capacidades reales que tiene el usuario dentro del sistema.
+
 
 
 
