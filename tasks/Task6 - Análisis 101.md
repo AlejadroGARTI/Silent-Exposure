@@ -12,7 +12,14 @@ Se
 ---
 
 ## 1) ¿Cuántos puertos tiene abierto la máquina?
-Re
+La máquina tiene abiertos 4 puertos, que se pueden ver mediante ss -tuln: 
+
+| Netid | State  | Recv-Q | Send-Q | Local Address:Port | Peer Address:Port |
+|-------|--------|--------|--------|--------------------|-------------------|
+| udp   | UNCONN | 0      | 0      | *:68               | *:*               |
+| tcp   | LISTEN | 0      | 128    | *:80               | *:*               |
+| tcp   | LISTEN | 0      | 128    | *:22               | *:*               |
+| tcp   | LISTEN | 0      | 128    | :::22              | :::*              |
 
 ---
 
