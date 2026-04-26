@@ -14,7 +14,7 @@ Se realizó un reconocimiento inicial sobre el servidor web objetivo para identi
 ## 1) ¿Cuantos ficheros tiene el servidor con dirb?
 Una vez que se obtiene el fichero, se procede a usar 
 
-dirb http[:]//10.129.183.158 /home/kali/Downloads/wordlist.txt
+`dirb http[:]//10.129.183.158 /home/kali/Downloads/wordlist.txt`
 
 En este caso DIRB encontró 17 rutas accesibles en el servidor mediante un proceso de fuerza bruta de directorios y archivos usando una wordlist(fichero descargado previamente). Estas rutas representan posibles directorios o ficheros expuestos a través de HTTP, pero no reflejan el sistema de archivos completo del servidor, sino únicamente lo que está públicamente accesible desde la web.
 
@@ -23,7 +23,7 @@ En este caso DIRB encontró 17 rutas accesibles en el servidor mediante un proce
 ## 2) ¿Cuantos ficheros tiene el servidor con Gobuster?
 En cambio, con Gobuster, se utilizó el comando 
 
-gobuster dir -u http[:]//10.129.183.158 -w /home/kali/Downloads/wordlist.txt" 
+`gobuster dir -u http[:]//10.129.183.158 -w /home/kali/Downloads/wordlist.txt` 
 
 Mediante este se enumeraron directorios y archivos en el servidor web y la herramienta identificó múltiples rutas, incluyendo archivos con código fuente y copias de seguridad. Algunas rutas devolvieron código 403 (Forbidden), indicando que existen en el servidor pero no son accesibles directamente. Otras rutas, como security.zip y config.php.bak, devolvieron código 200, lo que indica que son accesibles públicamente y podrían contener información sensible.
 Algunos ejemplos de estas rutas son: 
@@ -46,7 +46,7 @@ El código de error predominante en el escaneo es el 403  que significa Forbidde
 ---
 
 ## 5) ¿Cuál es la flag para que no muestre los ficheros erróneos en dirb?
-El comando utilizado para que no se muestren estos ficheros es el -N 403. Con este comando, dirb realizará el escaneo de manera normal, pero no te mostrará en la lista final ningún directorio o archivo que devuelva un error 403, limpiando así la salida y permitiendo identificar más fácilmente los recursos a los que realmente se tiene acceso.
+El comando utilizado para que no se muestren estos ficheros es el `-N 403`. Con este comando, dirb realizará el escaneo de manera normal, pero no te mostrará en la lista final ningún directorio o archivo que devuelva un error 403, limpiando así la salida y permitiendo identificar más fácilmente los recursos a los que realmente se tiene acceso.
 
 ---
 
