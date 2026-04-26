@@ -53,7 +53,18 @@ sudo() {
     fi
 }
 ```
-Por lo que al inspeccionar este archivo, tenemos el primer dato importante, existe un xploit en tar
+Por lo que al inspeccionar este archivo, tenemos el primer dato importante: existe un xploit en tar.
+
+2) Usando `sudo -l` obtenemos los comanos que se pueden ejecutar con sudo, y aquellos que no requieren de contraseña:
+
+```bash
+Matching Defaults entries for dnedry on lab-nublar-os:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User dnedry may run the following commands on lab-nublar-os:
+    (root) NOPASSWD: /bin/tar
+    (ALL : ALL) !/bin/su, !/bin/bash, !/bin/sh, !/bin/zsh
+```
 
 ---
 
