@@ -25,17 +25,17 @@ Se identificó que la clave pública GPG contenía información sensible en su c
 ---
 
 ## 3) ¿Ha que directorio se accede por defecto?
-Se accede al directorio /home/dnedry, esto se puede saber utilizando el comando: dnedry@lab-nublar-os:~$ pwd
+Se accede al directorio /home/dnedry, esto se puede saber utilizando el comando: dnedry@lab-nublar-os:~$ `pwd`
 
 ---
 
 ## 4) ¿Cuántos usuarios existen en el sistema?
-Contando los usuarios medainte el comando: wc -l /etc/passwd, tenemos un total de 28 usuarios
+Contando los usuarios medainte el comando: `wc -l /etc/passwd`, tenemos un total de 28 usuarios
 
 ---
 
 ## 5) ¿Cuál es el nombre completo del usuario?
-El nombre completo del usuario es: Dennis Nedry, ya que usando cat /etc/passwd, podemos observar la siguiente línea con el nombre completo:
+El nombre completo del usuario es: Dennis Nedry, ya que usando `cat /etc/passwd`, podemos observar la siguiente línea con el nombre completo:
 
 dnedry:x:1000:1000:Dennis Nedry,,,:/home/dnedry:/bin/bash
 
@@ -47,12 +47,12 @@ El
 ---
 
 ## 7) ¿Cuál es el hostname?
-El hostnanme es: lab-nublar-os, y se obtiene al escribir hostname. 
+El hostnanme es: lab-nublar-os, y se obtiene al escribir  `hostname`. 
 
 ---
 
 ## 8) Según la información del sistema, ¿en qué tipo de distribución está basado InGenOS?
-Esta basado en securityos, ya que mediante el comando cat /etc/os-release, obtenemos:
+Esta basado en securityos, ya que mediante el comando `cat /etc/os-release`, obtenemos:
 
 - NAME="InGenOS (Jurassic Park Control System)"
 - VERSION="1.0.4 (Nublar Edition)"
