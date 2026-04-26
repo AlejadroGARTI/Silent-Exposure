@@ -24,7 +24,7 @@ La máquina tiene abiertos 4 puertos, que se pueden ver mediante ss -tuln:
 ---
 
 ## 2) ¿Qué ha abierto el protocolo UDP?
-El 
+El protocolo está abierto en el púerto 68, tal como se puede observar en la tabla de la pregunta 1.
 
 ---
 
@@ -39,8 +39,10 @@ El código de error es
 ---
 
 ## 5) El usuario www-data, ¿qué proceso está ejecutando en el sistema
-Al 
+Se puede averiguar mediante el comando: ps -u www-data -f, que nos devuelve: 
 
+www-data   677     1  0 00:45 ?        00:00:00 /usr/sbin/lighttpd -D -f /etc/lighttpd/lighttpd.conf
+ 
 ---
 
 ## 6) ¿Cuántos binarios con el bit SUID activo existen en el sistema?
