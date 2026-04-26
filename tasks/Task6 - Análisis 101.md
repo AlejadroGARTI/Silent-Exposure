@@ -53,7 +53,7 @@ Este permiso especial permite que ciertos programas se ejecuten con los privileg
 ---
 
 ## 7) ¿En que estado se encuentra el firewall?
-Al no tener, en este momento permisos sudo, se puede ver el estado del firewall mediante systemctl status ufw, en donde observamos: 
+Al no tener en este momento permisos sudo, se puede ver el estado del firewall mediante systemctl status ufw, en donde observamos: 
 
 - ufw.service - Uncomplicated firewall
 - Loaded: loaded (/lib/systemd/system/ufw.service; enabled; vendor preset: enabled)
