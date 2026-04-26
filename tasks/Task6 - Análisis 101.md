@@ -71,7 +71,7 @@ Mediante apt --version, vemos que el paquete tiene la versión: apt 1.2.32ubuntu
 ---
 
 ## 9) ¿Qué prioridad tiene el paquete apt para el sistema?
-Mediante apt show apt, podemos observar que Priority: important.
+Mediante apt show apt, podemos observar que: (Priority: important).
 
 
 
