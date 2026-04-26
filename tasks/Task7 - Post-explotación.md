@@ -109,7 +109,7 @@ Aunque, también se puede obtener mediante `grep -R "." /root 2>/dev/null`, esto
 ....
 ....
 ```
-Aunque cabe aclarar que realizar una busqueda utilziando solamente un elemento tán común como un punto, puede llevar a una lista inmensa de resultados y en la mayoría de los casos, resultar poco práctico.
+Aunque cabe aclarar que realizar una busqueda utilizando solamente un elemento tán común como un punto, puede llevar a una lista inmensa de resultados y en la mayoría de los casos, resultar poco práctico.
 
 ---
 
