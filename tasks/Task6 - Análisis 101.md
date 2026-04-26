@@ -38,7 +38,7 @@ El código de error es
 
 ---
 
-## 5) El usuario www-data, ¿qué proceso está ejecutando en el sistema
+## 5) El usuario www-data, ¿qué proceso está ejecutando en el sistema?
 Se puede averiguar mediante el comando: ps -u www-data -f, que nos devuelve: 
 
 www-data   677     1  0 00:45 ?        00:00:00 /usr/sbin/lighttpd -D -f /etc/lighttpd/lighttpd.conf
@@ -46,26 +46,23 @@ www-data   677     1  0 00:45 ?        00:00:00 /usr/sbin/lighttpd -D -f /etc/li
 ---
 
 ## 6) ¿Cuántos binarios con el bit SUID activo existen en el sistema?
-El 
+Se utilizó el comando: find / -perm -4000 2>/dev/null | wc -l, y se utiliza para buscar todos los archivos del sistema que tienen activado el bit SUID (Set User ID) y contar cuántos existen en total. En este caso, el resultado obtenido es 16, lo que significa que hay 16 binarios en el sistema con el bit SUID habilitado. 
+
+Este permiso especial permite que ciertos programas se ejecuten con los privilegios del propietario del archivo (normalmente root), independientemente del usuario que los ejecute, por tanto, la presencia de estos 16 binarios indica los programas que potencialmente pueden ejecutarse con privilegios elevados y que, en un contexto de seguridad, podrían representar posibles vectores de escalada de privilegios si alguno de ellos está mal configurado o presenta vulnerabilidades.
 
 ---
 
-## 7) ¿Cuántos ficheros editables existen en el sistema?
+## 7) ¿En que estado se encuentra el firewall?
 La 
 
 ---
 
-## 8) ¿En que estado se encuentra el firewall?
-La 
+## 8) ¿Qué versión tiene el paquete apt?
+Mediante apt --version, vemos que el paquete tiene la versión: apt 1.2.32ubuntu0.1 (amd64)
 
 ---
 
-## 9) ¿Qué versión tiene el paquete apt?
-La 
-
----
-
-## 10) ¿Qué prioridad tiene el paquete apt para el sistema?
+## 9) ¿Qué prioridad tiene el paquete apt para el sistema?
 La 
 
 
