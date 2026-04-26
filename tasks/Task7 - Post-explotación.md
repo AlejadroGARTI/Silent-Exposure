@@ -76,6 +76,7 @@ En este caso, se utiliza un archivo de destino irrelevante `(/dev/null)` y un ar
 Como el comando se ejecuta mediante sudo, esa shell hereda privilegios de root. Esta técnica no es un exploit externo, sino un abuso de funcionalidades legítimas del propio binario, y está documentada en bases de datos, como la de GTFOBins, que recopilan herramientas del sistema que pueden ser utilizadas para escalada de privilegios cuando están mal configuradas en entornos Linux.
 
 Por lo que el comando final para acceder a root estaría dado por: 
+
 `sudo /bin/tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/bash`
 
 ## 1) ¿Qué pasa cuando se cambia de usuario?
