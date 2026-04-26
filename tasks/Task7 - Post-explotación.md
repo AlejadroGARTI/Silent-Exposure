@@ -7,10 +7,11 @@
 
 ## Investigación Inicial
 
-Medainte la busqueda de información a lo largo del sistema, se pueden recolectar pistas, tales como: 
+Mediante la busqueda de información a lo largo del sistema, se pueden recolectar pistas, tales como: 
 
-- cat /home/dnedry/.bashrc
+- Usando `cat /home/dnedry/.bashrc`, como método de inspección para este archivo, al final del mismo tenemos la instrucción (aquí no se encuentra completa, solo la parte importante):
 
+```bash
 sudo() {
     # Si el alumno intenta conseguir una consola de root...
     if [[ "$1" == "su" || "$1" == "-i" || "$1" == "bash" || "$1" == "/bin/bash" || "$1" == "sh" ]]; then
@@ -51,7 +52,9 @@ sudo() {
         command sudo "$@"
     fi
 }
+```
 
+ Por lo que al inspeccionar este archivo, tenemos el primer dato importante, existe un xploit en tar
 ---
 
 ## 1) ¿Qué pasa cuando se cambia de usuario?
