@@ -9,7 +9,7 @@
 
 Mediante la busqueda de información a lo largo del sistema, se pueden recolectar pistas, tales como: 
 
-- Usando `cat /home/dnedry/.bashrc`, como método de inspección para este archivo, al final del mismo tenemos la instrucción (aquí no se encuentra completa, solo la parte importante):
+1) Usando `cat /home/dnedry/.bashrc`, como método de inspección para este archivo, al final del mismo tenemos la instrucción:
 
 ```bash
 sudo() {
@@ -53,7 +53,6 @@ sudo() {
     fi
 }
 ```
-Re
 Por lo que al inspeccionar este archivo, tenemos el primer dato importante, existe un xploit en tar
 
 ---
