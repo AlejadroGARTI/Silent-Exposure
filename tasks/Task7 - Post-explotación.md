@@ -53,8 +53,9 @@ sudo() {
     fi
 }
 ```
+Re
+Por lo que al inspeccionar este archivo, tenemos el primer dato importante, existe un xploit en tar
 
- Por lo que al inspeccionar este archivo, tenemos el primer dato importante, existe un xploit en tar
 ---
 
 ## 1) ¿Qué pasa cuando se cambia de usuario?
