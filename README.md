@@ -3,3 +3,4 @@ Proyecto práctico de ciberseguridad que demuestra técnicas de seguridad ofensi
 
 ## Información general
 - **Plataforma:** TryHackMe  
+- **IP:** Variable
