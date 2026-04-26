@@ -55,13 +55,14 @@ Este permiso especial permite que ciertos programas se ejecuten con los privileg
 ## 7) ¿En que estado se encuentra el firewall?
 Al no tener en este momento permisos sudo, se puede ver el estado del firewall mediante `systemctl status ufw`, en donde observamos: 
 
-- ufw.service - Uncomplicated firewall
-- Loaded: loaded (/lib/systemd/system/ufw.service; enabled; vendor preset: enabled)
-- Active: active (exited) since Sun 2026-04-26 00:45:21 PDT; 2h 4min ago
-- Process: 188 ExecStart=/lib/ufw/ufw-init start quiet (code=exited, status=0/SUCCESS)
-- Main PID: 188 (code=exited, status=0/SUCCESS)
-- CGroup: /system.slice/ufw.service
-
+```bash
+ufw.service - Uncomplicated firewall
+    Loaded: loaded (/lib/systemd/system/ufw.service; enabled; vendor preset: enabled)
+    Active: active (exited) since Sun 2026-04-26 00:45:21 PDT; 2h 4min ago
+    Process: 188 ExecStart=/lib/ufw/ufw-init start quiet (code=exited, status=0/SUCCESS)
+    Main PID: 188 (code=exited, status=0/SUCCESS)
+    CGroup: /system.slice/ufw.service
+```
 
 ---
 
