@@ -6,9 +6,9 @@
 ---
 
 ## Investigación Inicial
-1) Descargamos el fichero mediante: wget http[:]//10.130.183.40/security.zip
+1) Descargamos el fichero mediante: `wget http[:]//10.130.183.40/security.zip`
 2) Lo descomprimimos usando la clave recuperada del fichero config.php.bak
-3) Obtenemos la información mediante: gpg --import --import-options show-only public_key.asc
+3) Obtenemos la información mediante: `gpg --import --import-options show-only public_key.asc`
 
 ---
 
@@ -23,7 +23,7 @@ El
 ---
 
 ## 3) ¿Cuál es el inicio de la clave pública?
-El inicio de la clave pública se puede visualizar mediante "less public_key.asc", en donde se puede observar: 
+El inicio de la clave pública se puede visualizar mediante `less public_key.asc`, en donde se puede observar: 
 
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
