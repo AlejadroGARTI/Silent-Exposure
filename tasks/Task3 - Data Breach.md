@@ -9,7 +9,7 @@
 
 Se analiza el primer fichero encontrado en el paso anterior, por lo que para config.php.bak usamos el comando: 
 
-curl http[:]//10.130.183.40/config.php.bak 
+`curl http[:]//10.130.183.40/config.php.bak`
 
 En este caso transfiere los datos a través del protocolo HTTP desde la página web. Mostrando de esta forma toda la información del fichero.
 
@@ -44,12 +44,12 @@ etc...
 ---
 
 ## 3) ¿Cómo se llama el host?
-El host es el dispositivo conectado a una red, identificado por una IP o nombre, por lo que en este caso "localhost" es el propio equipo en donde se ejecuta el software.
+El host es el dispositivo conectado a una red, identificado por una IP o nombre, por lo que en este caso `localhost` es el propio equipo en donde se ejecuta el software.
 
 ---
 
 ## 4) ¿Qué codificación se utiliza para las tablas?
-Se usa "utf8mb4" y es un juego de caracteres que soporta todos los caracteres Unicode, incluyendo emoticonos; es la recomendada para MySQL por su mayor compatibilidad.
+Se usa `utf8mb4` y es un juego de caracteres que soporta todos los caracteres Unicode, incluyendo emoticonos; es la recomendada para MySQL por su mayor compatibilidad.
 
 ---
 
