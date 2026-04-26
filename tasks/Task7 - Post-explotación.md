@@ -68,6 +68,16 @@ User dnedry may run the following commands on lab-nublar-os:
 
 ---
 
+## Explotación de la vulnerabilidad
+Revisando GTFOBins, tenemos que tar incluye opciones como `--checkpoint` y `--checkpoint-action`, diseñadas originalmente para ejecutar acciones durante el proceso de archivado. Al combinarlas, es posible forzar la ejecución de un comando arbitrario en momentos específicos del proceso. 
+
+En este caso, se utiliza un archivo de destino irrelevante `(/dev/null)` y un archivo de entrada también ficticio, ya que el objetivo no es comprimir datos, sino activar el mecanismo interno del programa. Luego, se configura un checkpoint con `--checkpoint=1`, lo que provoca que la acción se ejecute inmediatamente, y se define `--checkpoint-action=exec=/bin/bash`, que ordena al sistema lanzar una shell. 
+
+Como el comando se ejecuta mediante sudo, esa shell hereda privilegios de root. Esta técnica no es un exploit externo, sino un abuso de funcionalidades legítimas del propio binario, y está documentada en bases de datos, como la de GTFOBins, que recopilan herramientas del sistema que pueden ser utilizadas para escalada de privilegios cuando están mal configuradas en entornos Linux.
+
+Por lo que el comando final para acceder a root estaría dado por: 
+`sudo /bin/tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/bash`
+
 ## 1) ¿Qué pasa cuando se cambia de usuario?
 Re
 
