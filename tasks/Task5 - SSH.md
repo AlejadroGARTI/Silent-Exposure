@@ -44,7 +44,24 @@ dnedry:x:1000:1000:Dennis Nedry,,,:/home/dnedry:/bin/bash
 ---
 
 ## 6) ¿Quén es el encargado de monitorear todos los sistemas?
-El encargado se obtiene en la informacón obtenida a la hora de iniciar la sesión remota y autenticarse, vemos al 
+El encargado se obtiene en la informacón obtenida a la hora de iniciar la sesión remota y autenticarse, vemos al  encargado de monitorear el sistema.
+
+```bash
+The server may need to be upgraded. See https://openssh.com/pq.html
+dnedry@10.130.178.202's password: 
+ 
+  ___          ____
+ |_ _| _ __   / ___|  ___  _ __
+  | | | '_ \ | |  _  / _ \| '_ \
+  | | | | | || |_| ||  __/| | | |
+ |___||_| |_| \____| \___||_| |_|
+ 
+ International Genetics Technologies, Inc.
+ === JURASSIC PARK CONTROL SYSTEM - NUBLAR FACILITY ===
+ 
+ WARNING: UNAUTHORIZED ACCESS IS STRICTLY PROHIBITED.
+ ALL ACTIVITIES ARE LOGGED AND MONITORED BY SYSTEM ADMIN (R. ARNOLD).
+```
 
 ---
 
