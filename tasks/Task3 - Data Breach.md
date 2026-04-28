@@ -143,7 +143,7 @@ Esta es la clave criptográfica única que se usa en WordPress para cifrar cooki
 ---
 
 ## 6) ¿Cuál es la SECURE_AUTH_KEY del sistema?
-La definición sería igual que la AUTH_KEY, solo que en este caso la SECURE_AUTH_KEY probablemente protege, específicamente, a las cookies enviadas por HTTPS y estaría dada por: **`"NR;@e/,/!cqzLP@+`C`**
+La definición sería igual que la AUTH_KEY, solo que en este caso la SECURE_AUTH_KEY probablemente protege, específicamente, a las cookies enviadas por HTTPS y estaría dada por: **"NR;@e/,/!cqzLP@+`C**
 
 ---
 
