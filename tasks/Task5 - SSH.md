@@ -21,15 +21,19 @@ El administrador es dnedry, mismo usuario que encontramos inspeccionando el .bak
 define('USER', 'dnedry');
 ```
 
+Y la importancia radica en que identificar al administrador del sistema permite enfocar la investigación en el usuario con mayores privilegios dentro de la plataforma por lo que si un atacante logra comprometer la cuenta de dnedry, podría acceder a configuraciones críticas, modificar parámetros de seguridad, leer bases de datos sensibles o incluso deshabilitar sistemas de monitorización. En este caso, saber que dnedry es el administrador obtenido desde el archivo .bak confirma que el responsable de la seguridad del sistema ha dejado expuestas sus propias credenciales, lo que representa una vulnerabilidad crítica.
+
 ---
 
 ## 2) ¿Cuál es su contraseña?
-Se identificó que la clave pública GPG contenía información sensible en su campo UID, incluyendo una posible contraseña (L3Dodgson5). Dado que los metadatos de las claves públicas son accesibles sin autenticación, esto representa una fuga de credenciales. Esta mala práctica de gestión de secretos permitió el acceso por SSH sin necesidad de realizar ataques criptográficos, evidenciando un fallo humano.
+Se identificó que la clave pública GPG contenía información sensible en su campo UID, incluyendo una posible contraseña (L3Dodgson5), que una vez que se utilizó para ingresar, se demostró que es la correcta. Dado que los metadatos de las claves públicas son accesibles sin autenticación, esto representa una fuga de credenciales por lo que esta mala práctica de gestión de secretos permitió el acceso por SSH sin necesidad de realizar ataques criptográficos, evidenciando un fallo humano.
 
 ---
 
 ## 3) ¿A que directorio se accede por defecto?
 Se accede al directorio /home/dnedry, esto se puede saber utilizando el comando: dnedry@lab-nublar-os:~$ `pwd`
+
+Saber que el directorio por defecto es /home/dnedry confirma que el usuario dnedry tiene una cuenta doméstica estándar en el sistema, lo que valida que no se trata de un usuario temporal o de servicio; esto permite deducir que dnedry es un usuario humano real con capacidad de almacenar archivos personales, scripts de automatización o credenciales adicionales en su propio espacio.
 
 ---
 
@@ -43,7 +47,9 @@ Saber la cantidad de usuarios en un sistema es importante porque permite evaluar
 ## 5) ¿Cuál es el nombre completo del usuario?
 El nombre completo del usuario es: Dennis Nedry, ya que usando `cat /etc/passwd`, podemos observar la siguiente línea con el nombre completo:
 
-dnedry:x:1000:1000:Dennis Nedry,,,:/home/dnedry:/bin/bash
+`dnedry:x:1000:1000:Dennis Nedry,,,:/home/dnedry:/bin/bash`
+
+Saber que el nombre completo es Dennis Nedry permite correlacionar este dato con el administrador del sistema (dnedry), el correo electrónico (dnedry@ingen.com) y el nombre en la clave GPG (Dennis Nedry). Esta correlación cruzada confirma que todas las piezas de información pertenecen a la misma persona, validando que la brecha es consistente y no hay señuelos o datos falsos mezclados en la investigación.
 
 ```bash
 root:x:0:0:root:/root:/bin/bash
@@ -98,6 +104,8 @@ dnedry@10.130.178.202's password:
  ALL ACTIVITIES ARE LOGGED AND MONITORED BY SYSTEM ADMIN (R. ARNOLD).
 ```
 
+Saber que R. ARNOLD es el encargado de monitorear todos los sistemas permite identificar al responsable de la supervisión de eventos, logs y alertas de seguridad. Desde una perspectiva ofensiva, si un atacante quiere moverse sigilosamente por el sistema, necesita evadir precisamente a esta persona o al sistema que él administra, por lo que si Arnold es quien revisa los logs, el atacante deberá borrar o manipular las trazas que genere su actividad para no ser detectado.
+
 ---
 
 ## 7) ¿Cuál es el hostname?
@@ -107,6 +115,8 @@ El hostname es: lab-nublar-os.
 dnedry@lab-nublar-os:~$ hostname
 lab-nublar-os
 ```
+
+Saber esto permite identificar de forma única el sistema comprometido dentro de una red que podría contener múltiples máquinas por lo que en entornos corporativos o de laboratorio, es común tener decenas o cientos de servidores con direcciones IP dinámicas o cambiantes. Además, el hostname actúa como una etiqueta persistente que no cambia fácilmente, permitiendo al atacante o al auditor, referirse al mismo sistema de manera consistente a lo largo del tiempo, incluso si la IP varía por DHCP o reinicio, como es el caso de este laboratorio.
 
 ---
 
@@ -125,6 +135,8 @@ HOME_URL="http://www.jurassicpark.com/"
 SUPPORT_URL="http://help.ingen.com/"
 BUG_REPORT_URL="http://bugs.ingen.com/"
 ```
+
+Saber que InGenOS está basado en securityos permite al atacante o al auditor investigar qué vulnerabilidades conocidas afectan a esa distribución base, por lo que si, securityos es una derivada de alguna distribución más conocida (como Debian, Ubuntu, CentOS o Alpine), se pueden buscar exploits públicos, configuraciones inseguras comunes o técnicas de escalada de privilegios específicas de esa familia. Por ejemplo, si securityos está basado en Debian, el atacante sabe que puede usar comandos como apt para instalar herramientas, que los logs están en /var/log/ y que la política de sudo está en /etc/sudoers.
 
 ---
 
