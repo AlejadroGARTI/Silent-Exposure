@@ -125,8 +125,5 @@ La IP que ejecutó el proceso esta dada por:
 
 **IP resultante:** `253.197.116.133`
 
-T = 84
-Suma = 49 + 84 = 133
-
 
 
