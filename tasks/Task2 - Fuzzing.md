@@ -148,7 +148,8 @@ El comando utilizado para que no se muestren estos ficheros es el **`-N 403`**. 
 
 ## 6) ¿Cuál es el tamaño en bytes de fichero de mayor tamaño?
 El fichero de mayor tamaño es:
-- config.php.bak        (Status: 200)   [Size: 2160]
+
+`config.php.bak        (Status: 200)   [Size: 2160]`
 
 Esto se debe a que al ser un recurso real y accesible que contiene datos legítimos del servidor, su tamaño naturalmente es mayor porque almacena información útil y potencialmente sensible. Por lo tanto, el mayor tamaño de este archivo refleja que el servidor está sirviendo contenido real en lugar de una página de error estándar, cuyo peso es de 345 bytes, lo que lo convierte en un objetivo de mayor interés para un atacante o auditor de seguridad.
 
@@ -156,6 +157,7 @@ Esto se debe a que al ser un recurso real y accesible que contiene datos legíti
 
 ## 7) ¿Cómo se llama el fichero que tiene un tamaño inferior al mayor?
 El segundo fichero de mayor tamaño es: 
-`- security.zip         (Status: 200) [Size: 2109]`
+
+`security.zip         (Status: 200) [Size: 2109]`
 
 Y al igual que el fichero previamente descrito, tiene un tamaño mayor al ser un archivo quie contiene datos dentro del servidor.
