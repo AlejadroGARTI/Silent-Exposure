@@ -42,7 +42,7 @@ dnedry:x:1000:1000:Dennis Nedry,,,:/home/dnedry:/bin/bash
 ---
 
 ## 6) ¿Quén es el encargado de monitorear todos los sistemas?
-El 
+El encargado se obtiene en la informacón obtenida a la hora de iniciar la sesión remota y autenticarse, vemos al 
 
 ---
 
