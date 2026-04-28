@@ -80,7 +80,7 @@ Por lo que el comando final para acceder a root estaría dado por:
 `sudo /bin/tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bin/bash`
 
 ## 1) ¿Qué pasa cuando se cambia de usuario?
-Se ejecuta la funcion `Interceptor de Sudo (Efecto Magic Word)` e imprime por pantalla: "AH AH AH! YOU DIDN'T SAY THE MAGIC WORD!"
+Cuando se intenta cambiar de usuario con comandos como `sudo su`, `sudo -i`, `sudo bash`, `sudo sh` o `sudo /bin/bash`, se ejecuta la función interceptor de sudo definida en `/home/dnedry/.bashrc`. Esta función intercepta el intento, no ejecuta el comando real, y en su lugar imprime repetidamente en pantalla: `'AH AH AH! YOU DIDN'T SAY THE MAGIC WORD!'`
 
 ---
 
