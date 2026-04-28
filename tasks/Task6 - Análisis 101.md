@@ -89,7 +89,9 @@ Se puede averiguar mediante el comando: `ps -u www-data -f`, que nos devuelve:
 UID        PID  PPID  C STIME TTY          TIME CMD
 www-data   691     1  0 04:39 ?        00:00:00 /usr/sbin/lighttpd -D -f /etc/lighttpd/lighttpd.conf
 ```
-Es importante conocer qué procesos ejecuta el usuario www-data porque este es el usuario predeterminado bajo el que suelen correr los servidores web (como Apache, Nginx o Lighttpd), por lo que si un atacante logra explotar una vulnerabilidad en la web, obtendrá acceso como www-data. Revisar sus procesos permite detectar actividades anómalas o maliciosas, como conexiones inversas, descargas de exploits o herramientas de persistencia que el atacante haya dejado ejecutándose en el sistema.
+Es importante conocer qué procesos ejecuta el usuario www-data porque este es el usuario predeterminado bajo el que suelen correr los servidores web (como Apache, Nginx o Lighttpd), por lo que si un atacante logra explotar una vulnerabilidad en la web, obtendrá acceso como www-data. 
+
+Revisar sus procesos permite detectar actividades anómalas o maliciosas, como conexiones inversas, descargas de exploits o herramientas de persistencia que el atacante haya dejado ejecutándose en el sistema.
 
 ---
 
