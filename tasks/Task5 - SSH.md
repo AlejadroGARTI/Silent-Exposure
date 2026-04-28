@@ -49,7 +49,7 @@ El nombre completo del usuario es: Dennis Nedry, ya que usando `cat /etc/passwd`
 
 `dnedry:x:1000:1000:Dennis Nedry,,,:/home/dnedry:/bin/bash`
 
-Saber que el nombre completo es Dennis Nedry permite correlacionar este dato con el administrador del sistema (dnedry), el correo electrónico (dnedry@ingen.com) y el nombre en la clave GPG (Dennis Nedry). Esta correlación cruzada confirma que todas las piezas de información pertenecen a la misma persona, validando que la brecha es consistente y no hay señuelos o datos falsos mezclados en la investigación.
+Saber que el nombre completo es Dennis Nedry permite correlacionar este dato con el administrador del sistema (dnedry), el correo electrónico (dnedry@ingen[.]com) y el nombre en la clave GPG (Dennis Nedry). Esta correlación cruzada confirma que todas las piezas de información pertenecen a la misma persona, validando que la brecha es consistente y no hay señuelos o datos falsos mezclados en la investigación.
 
 ```bash
 root:x:0:0:root:/root:/bin/bash
