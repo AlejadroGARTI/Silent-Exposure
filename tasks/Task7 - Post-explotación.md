@@ -114,7 +114,7 @@ Aunque cabe aclarar que realizar una busqueda utilizando solamente un elemento t
 ---
 
 ## 4) ¿Qué IP ejecutó el proceso?
-La IP que ejecutó el proceso esta dada por: 
+La IP que ejecutó el proceso está dada por: 
 
 | Segmento | Caracteres | Valores ASCII | Suma |
 |----------|------------|---------------|------|
