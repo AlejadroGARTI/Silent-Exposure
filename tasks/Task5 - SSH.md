@@ -13,7 +13,7 @@ Con las credenciales obtenidas, se estableció una conexión SSH al servidor rem
 
 ---
 
-## 1) ¿Cuál es el admistrador del sistema?
+## 1) ¿Cuál es el administrador del sistema?
 El administrador es dnedry, mismo usuario que encontramos inspeccionando el .bak, en el campo: 
 
 ```bash
@@ -28,15 +28,15 @@ Se identificó que la clave pública GPG contenía información sensible en su c
 
 ---
 
-## 3) ¿Ha que directorio se accede por defecto?
+## 3) ¿A que directorio se accede por defecto?
 Se accede al directorio /home/dnedry, esto se puede saber utilizando el comando: dnedry@lab-nublar-os:~$ `pwd`
 
 ---
 
 ## 4) ¿Cuántos usuarios existen en el sistema?
-Contando los usuarios medainte el comando: `wc -l /etc/passwd`, tenemos un total de 28 usuarios
+Contando los usuarios mediante el comando: `wc -l /etc/passwd`, tenemos un total de 28 usuarios
 
-Saber la cantidad de usuarios en un sistema es importante porque permite evaluar la superficie de ataque, ya que cada usuario adicional (especialmente si tiene privilegios, claves débiles o está inactivo) es un posible punto de entrada para un atacante, además un número anormalmente alto o bajo puede indicar huellas de un intruso que creó cuentas ocultas, o por el contrario, falta de control de accesos.
+Saber la cantidad de usuarios en un sistema es importante porque permite evaluar la superficie de ataque, ya que cada usuario adicional (especialmente si tiene privilegios, claves débiles o está inactivo) es un posible punto de entrada para un atacante, además, un número anormalmente alto o bajo puede indicar huellas de un intruso que creó cuentas ocultas, o por el contrario, falta de control de accesos.
 
 ---
 
@@ -78,8 +78,8 @@ sshd:x:108:65534::/var/run/sshd:/usr/sbin/nologin
 ```
 ---
 
-## 6) ¿Quén es el encargado de monitorear todos los sistemas?
-El encargado se obtiene en la informacón obtenida a la hora de iniciar la sesión remota y autenticarse, vemos al  encargado de monitorear el sistema.
+## 6) ¿Quién es el encargado de monitorear todos los sistemas?
+El encargado de monitorear todos los sistemas es R. ARNOLD, como se muestra en el banner de bienvenida al conectarse por SSH:
 
 ```bash
 The server may need to be upgraded. See https://openssh.com/pq.html
@@ -101,7 +101,7 @@ dnedry@10.130.178.202's password:
 ---
 
 ## 7) ¿Cuál es el hostname?
-El hostnanme es: lab-nublar-os. 
+El hostname es: lab-nublar-os. 
 
 ```bash
 dnedry@lab-nublar-os:~$ hostname
@@ -111,7 +111,7 @@ lab-nublar-os
 ---
 
 ## 8) Según la información del sistema, ¿en qué tipo de distribución está basado InGenOS?
-Esta basado en securityos, ya que mediante el comando `cat /etc/os-release`, obtenemos:
+Está basado en securityos, ya que mediante el comando `cat /etc/os-release`, obtenemos:
 
 ```bash
 dnedry@lab-nublar-os:~$ cat /etc/os-release
