@@ -85,8 +85,12 @@ tmpfs              99116       0     99116   0% /run/user/1000
 ## 5) El usuario www-data, ¿qué proceso está ejecutando en el sistema?
 Se puede averiguar mediante el comando: `ps -u www-data -f`, que nos devuelve: 
 
-www-data   677     1  0 00:45 ?        00:00:00 /usr/sbin/lighttpd -D -f /etc/lighttpd/lighttpd.conf
- 
+```bash
+UID        PID  PPID  C STIME TTY          TIME CMD
+www-data   691     1  0 04:39 ?        00:00:00 /usr/sbin/lighttpd -D -f /etc/lighttpd/lighttpd.conf
+```
+Es importante conocer qué procesos ejecuta el usuario www-data porque este es el usuario predeterminado bajo el que suelen correr los servidores web (como Apache, Nginx o Lighttpd). Si un atacante logra explotar una vulnerabilidad en la web, obtendrá acceso como www-data. Revisar sus procesos permite detectar actividades anómalas o maliciosas, como shells reversas, descargas de exploits o herramientas de persistencia que el atacante haya dejado ejecutándose en el sistema.
+
 ---
 
 ## 6) ¿Cuántos binarios con el bit SUID activo existen en el sistema?
