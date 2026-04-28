@@ -114,8 +114,35 @@ Aunque cabe aclarar que realizar una busqueda utilizando solamente un elemento t
 ---
 
 ## 4) ¿Qué IP ejecutó el proceso?
-El código de error es 
+La IP que ejecutó el proceso esta dada por: 
 
+Segmento 1: Y O U
+Y = 89
+
+O = 79
+
+U = 85
+Suma = 89 + 79 + 85 = 253
+
+Segmento 2: C 4 N
+C = 67
+
+4 = 52 (el carácter '4', no el número 4)
+
+N = 78
+Suma = 67 + 52 + 78 = 197
+
+Segmento 3: D 0
+D = 68
+
+0 = 48
+Suma = 68 + 48 = 116
+
+Segmento 4: 1 T
+1 = 49
+
+T = 84
+Suma = 49 + 84 = 133
 
 
 
