@@ -74,15 +74,17 @@ El hostnanme es: lab-nublar-os, y se obtiene al escribir  `hostname`.
 Esta basado en securityos, ya que mediante el comando `cat /etc/os-release`, obtenemos:
 
 ```bash
-- NAME="InGenOS (Jurassic Park Control System)"
-- VERSION="1.0.4 (Nublar Edition)"
-- ID=ingenos
-- ID_LIKE=securityos
-- PRETTY_NAME="InGenOS 1.0.4 LTS"
-- VERSION_ID="1.0.4"
-- HOME_URL="http[:]//www[.]jurassicpark.com/"
-- SUPPORT_URL="http[:]//help.ingen.com/"
-- BUG_REPORT_URL="http[:]//bugs.ingen.com/"
+dnedry@lab-nublar-os:~$ cat /etc/os-release
+NAME="InGenOS (Jurassic Park Control System)"
+VERSION="1.0.4 (Nublar Edition)"
+ID=ingenos
+ID_LIKE=securityos
+PRETTY_NAME="InGenOS 1.0.4 LTS"
+VERSION_ID="1.0.4"
+HOME_URL="http://www.jurassicpark.com/"
+SUPPORT_URL="http://help.ingen.com/"
+BUG_REPORT_URL="http://bugs.ingen.com/"
+```
 
 ---
 
