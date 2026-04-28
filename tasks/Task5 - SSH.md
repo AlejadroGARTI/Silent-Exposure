@@ -1,7 +1,7 @@
 # Task 5 Acceso al sistema mediante SSH
 
 ## Información general 
-- **Herramientas utilizadas:**  Comandos básicos en Kali Linux
+- **Herramientas utilizadas:**  Comandos en Kali Linux
 
 ---
 
