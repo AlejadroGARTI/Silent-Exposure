@@ -43,7 +43,7 @@ mQGNBGnjWv4BDACqYvlAtc9o3Lve1YOUvgHphHCKyCLIy2swF1PDE0FR39n15H01
 PiJ4i/60nQzU6UG+kiRO3p2D6TUzXVK+3acnaO9hc....
 ```
 
-Una public key o clave pública es una clave criptográfica que forma parte de la criptografía asimétrica y puede compartirse libremente con otras personas y su función principal es permitir que otros cifren mensajes destinados a ti o verifiquen firmas digitales que se hayan creado con una clave privada. Aunque cualquiera puede usarla, solo la clave privada correspondiente puede descifrar la información o generar la firma válida.
+Una public key o clave pública es una clave criptográfica que forma parte de la criptografía asimétrica y puede compartirse libremente con otras personas y su función principal es permitir que otros cifren mensajes destinados al usuario o verifiquen firmas digitales que se hayan creado con una clave privada. Aunque cualquiera puede usarla, solo la clave privada correspondiente puede descifrar la información o generar la firma válida.
 
 ---
 
