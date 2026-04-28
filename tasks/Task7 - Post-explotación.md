@@ -1,7 +1,7 @@
 # Task 7 Escalada de privilegios en Linux
 
 ## Información general 
-- **Herramientas utilizadas:**  
+- **Herramientas utilizadas:**  https[:]//gtfobins[.]org/ y https[:]//www[.]ascii-code.com/
 
 ---
 
@@ -53,9 +53,9 @@ sudo() {
     fi
 }
 ```
-Por lo que al inspeccionar este archivo, tenemos el primer dato importante: existe un xploit en tar.
+Por lo que al inspeccionar este archivo, tenemos el primer dato importante: existe un exploit en tar.
 
-2) Usando `sudo -l` obtenemos los comanos que se pueden ejecutar con sudo, y aquellos que no requieren de contraseña:
+2) Usando `sudo -l` obtenemos los comandos que se pueden ejecutar con sudo, y aquellos que no requieren de contraseña:
 
 ```bash
 Matching Defaults entries for dnedry on lab-nublar-os:
@@ -87,12 +87,14 @@ Se ejecuta la funcion `Interceptor de Sudo (Efecto Magic Word)` e imprime por pa
 ## 2) ¿Qué herramienta es vulnerable?
 La herramienta vulnerable es tar, tal como se demostró anteriormente en el análisis de vulnerabilidades.
 
+Esta mala configuración de privilegios, combinada con las funcionalidades legítimas de tar documentadas en GTFOBins, permite la escalada de privilegios.
+
 ---
 
 ## 3) ¿Cuál es la flag de root?
 La flag de root es YOU.C4N.D0.1T, obtenida a traves de `cat '/root/\r00t\'`
 
-Aunque, también se puede obtener mediante `grep -R "." /root 2>/dev/null`, esto debido a que analizando el formato de la FLAG previamente, ya que se encuentra en la página del ejercicio, se sabe que tiene un punto en su estructura, por lo que al conocer datos que podrían ser insignificantes, se puede realziar una busqueda para buscar formatos, en donde tenemos el resultado: 
+Aunque, también se puede obtener mediante `grep -R "." /root 2>/dev/null`, esto debido a que analizando el formato de la FLAG previamente, ya que se encuentra en la página del ejercicio, se sabe que tiene un punto en su estructura, por lo que al conocer datos que podrían ser insignificantes, se puede realizar una busqueda para buscar formatos, en donde tenemos el resultado: 
 
 ```bash
 /root/.profile:# ~/.profile: executed by Bourne-compatible login shells.
@@ -114,7 +116,7 @@ Aunque cabe aclarar que realizar una busqueda utilizando solamente un elemento t
 ---
 
 ## 4) ¿Qué IP ejecutó el proceso?
-La IP que ejecutó el proceso está dada por: 
+La IP que ejecutó el proceso se obtiene convirtiendo la flag de root (YOU.C4N.D0.1T) en una dirección IPv4, sumando los valores ASCII de cada segmento: 
 
 | Segmento | Caracteres | Valores ASCII | Suma |
 |----------|------------|---------------|------|
