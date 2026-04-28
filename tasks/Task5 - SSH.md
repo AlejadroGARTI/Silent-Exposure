@@ -1,15 +1,15 @@
 # Task 5 Acceso al sistema mediante SSH
 
 ## Información general 
-- **Herramientas utilizadas:**  
+- **Herramientas utilizadas:**  Comandos básicos en Kali Linux
 
 ---
 
 ## Investigación Inicial
 
-Se realizó un análisis del archivo .bak proporcionado en la fase anterior, donde se identificó al administrador del sistema mediante la constante define('USER', 'dnedry'). Posteriormente, se inspeccionó la clave pública GPG del usuario, detectando que el campo UID contenía una posible contraseña en texto claro (L3Dodgson5). Esta mala práctica permitió el acceso por SSH sin necesidad de ataques criptográficos.
+Se realizó un análisis de los archivo .bak y .asc, proporcionado en la fase anterior, donde se identificó al administrador del sistema mediante la constante define('USER', 'dnedry'). Posteriormente, se inspeccionó la clave pública GPG del usuario, detectando que el campo UID contenía una posible contraseña en texto claro (L3Dodgson5). Esta mala práctica permitió el acceso por SSH sin necesidad de ataques criptográficos.
 
-Con las credenciales obtenidas, se estableció una conexión SSH al servidor remoto, autenticándose como dnedry. Una vez dentro, se procedió a la recolección de información del sistema mediante comandos básicos de enumeración (pwd, hostname, cat /etc/passwd, cat /etc/os-release, id, etc.), con el fin de responder a las preguntas del tas 
+Con las credenciales obtenidas, se estableció una conexión SSH al servidor remoto, autenticándose como dnedry. Una vez dentro, se procedió a la recolección de información del sistema mediante comandos básicos de enumeración (pwd, hostname, cat /etc/passwd, cat /etc/os-release, id, etc.). 
 
 ---
 
