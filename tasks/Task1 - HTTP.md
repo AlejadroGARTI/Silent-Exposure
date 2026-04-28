@@ -7,7 +7,7 @@
 
 ## Investigación Inicial
 
-Se realiza un escaneo de servicios para identificar puertos abiertos y versiones usando el comando `nmap -sC -sV 10.128.157.53`
+Se realiza un escaneo de servicios para identificar puertos abiertos y versiones usando el comando `nmap -sC -sV 10.130.178.202`
 
 Este comando se utiliza para escanear un objetivo en busca de puertos abiertos y servicios activos. La opción `-sC` ejecuta scripts básicos de Nmap para obtener información adicional automáticamente, mientras que `-sV` identifica las versiones de los servicios detectados. Finalmente, la dirección IP indica el host que se está analizando
 
@@ -59,7 +59,7 @@ El título es Security Warning Simulation que se puede ver dentro del comando nm
 
 ## 4) ¿Cuál es el Error code?
 El código de error es SEC_ERROR_UNKNOWN_ISSUER.
-Este error se puede observar al acceder desde el navegador a la dirección http[:]//192.168.1.50.
+Este error se puede observar al acceder desde el navegador a la dirección http[:]//10.130.178.202.
 Una vez dentro de la página, el navegador muestra el aviso “Warning: Potential Security Risk Ahead”.
 Al acceder a la sección Advanced, se puede visualizar el error específico.
 
@@ -68,11 +68,11 @@ Al acceder a la sección Advanced, se puede visualizar el error específico.
 ## 5) ¿Cuál es la razón del error?
 Al igual que en el punto 4, esta información se puede observar en la sección Advanced
 
-- Host: 10.128.157.53
+- Host: 10.130.178.202
 - Port: 443
 - Reason: Self-signed / untrusted certificate
 
-La explicación es que el host 10.128.157.53 está utilizando el puerto 443, que corresponde al tráfico HTTPS (cifrado). Sin embargo, el motivo del aviso de seguridad es que el servidor presenta un certificado digital auto-firmado o no confiable. Esto significa que el certificado no ha sido emitido por una autoridad de certificación reconocida, por lo que el navegador no puede verificar la identidad del servidor, generando una alerta de seguridad.
+La explicación es que el host 10.130.178.202 está utilizando el puerto 443, que corresponde al tráfico HTTPS (cifrado). Sin embargo, el motivo del aviso de seguridad es que el servidor presenta un certificado digital auto-firmado o no confiable. Esto significa que el certificado no ha sido emitido por una autoridad de certificación reconocida, por lo que el navegador no puede verificar la identidad del servidor, generando una alerta de seguridad.
 
 ---
 
