@@ -70,7 +70,7 @@ syslog:x:104:108::/home/syslog:/bin/false
 _apt:x:105:65534::/nonexistent:/bin/false
 messagebus:x:106:110::/var/run/dbus:/bin/false
 uuidd:x:107:111::/run/uuidd:/bin/false
-(((dnedry:x:1000:1000:Dennis Nedry,,,:/home/dnedry:/bin/bash)))
+((dnedry:x:1000:1000:Dennis Nedry,,,:/home/dnedry:/bin/bash))
 sshd:x:108:65534::/var/run/sshd:/usr/sbin/nologin
 
 ```
