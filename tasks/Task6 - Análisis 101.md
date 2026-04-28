@@ -29,7 +29,18 @@ El protocolo está abierto en el puerto 68, tal como se puede observar en la tab
 ---
 
 ## 3) ¿Qué porcentaje de disco está siendo usando por el sistema?
-El 
+El procentaje se observa mediante `df -h` y es importante conocer este elemento por que el espacio en disco es un recurso finito y crítico cuya saturación puede ser síntoma de un ataque o vector para inhabilitar defensas.
+
+```bash
+Filesystem      Size  Used Avail Use% Mounted on
+udev            463M     0  463M   0% /dev
+tmpfs            97M  3.7M   93M   4% /run
+/dev/nvme0n1p1   19G  1.5G   17G   9% /
+tmpfs           482M     0  482M   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           482M     0  482M   0% /sys/fs/cgroup
+tmpfs            97M     0   97M   0% /run/user/1000
+```
 
 ---
 
