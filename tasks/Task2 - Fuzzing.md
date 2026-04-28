@@ -11,8 +11,8 @@ Se realizó un reconocimiento inicial sobre el servidor web objetivo para identi
 
 ---
 
-## 1) ¿Cuantos ficheros tiene el servidor con dirb?
-Una vez que se obtiene el fichero, se procede a usar 
+## 1) ¿Cuántos ficheros tiene el servidor con dirb?
+Una vez descargada la wordlist, se procede a usar dirb:
 
 `dirb http[:]//10.130.178.202 /home/kali/Downloads/wordlist.txt`
 
@@ -142,7 +142,7 @@ El código de error predominante en el escaneo es el 403  que significa Forbidde
 ---
 
 ## 5) ¿Cuál es la flag para que no muestre los ficheros erróneos en dirb?
-El comando utilizado para que no se muestren estos ficheros es el `-N 403`. Con este comando, dirb realizará el escaneo de manera normal, pero no te mostrará en la lista final ningún directorio o archivo que devuelva un error 403, limpiando así la salida y permitiendo identificar más fácilmente los recursos a los que realmente se tiene acceso.
+El comando utilizado para que no se muestren estos ficheros es el **`-N 403`**. Con este comando, dirb realizará el escaneo de manera normal, pero no te mostrará en la lista final ningún directorio o archivo que devuelva un error 403, limpiando así la salida y permitiendo identificar más fácilmente los recursos a los que realmente se tiene acceso.
 
 ---
 
