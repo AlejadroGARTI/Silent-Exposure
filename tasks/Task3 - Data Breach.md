@@ -148,9 +148,9 @@ La definición sería igual que la AUTH_KEY, solo que en este caso la SECURE_AUT
 ---
 
 ## 7) ¿Cuál es el prefijo de la Base de datos?
-El prefijo es una cadena añadida al inicio de cada tabla para identificar las tablas de una aplicación específica dentro de una misma BD, permitiendo múltiples sistemas en una sola base, en este caso estaría dada por: ingen_
+El prefijo es una cadena añadida al inicio de cada tabla para identificar las tablas de una aplicación específica dentro de una misma BD, permitiendo múltiples sistemas en una sola base, en este caso estaría dada por: `ingen_`
 
 ---
 
 ## 8) ¿Qué fichero contiene las claves del parque?
-EL fichero con claves es un archivo que almacena las claves de seguridad, credenciales de BD y configuraciones sensibles del sistema, y estaría dado por: public_key.asc
+EL fichero con claves es un archivo que almacena las claves de seguridad, credenciales de BD y configuraciones sensibles del sistema, y estaría dado por: `public_key.asc`
