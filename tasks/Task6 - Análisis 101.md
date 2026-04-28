@@ -7,7 +7,7 @@
 
 ## Investigación Inicial
 
-Se emplearon herramientas de análisis estático y comandos básicos de Linux.
+Se emplearon herramientas de análisis estático y comandos básicos de Linux para obtener información importante de la máquina y de su funcionamiento.
 
 ---
 
