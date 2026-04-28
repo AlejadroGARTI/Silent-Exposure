@@ -160,4 +160,4 @@ El segundo fichero de mayor tamaño es:
 
 `security.zip         (Status: 200) [Size: 2109]`
 
-Y al igual que el fichero previamente descrito, tiene un tamaño mayor al ser un archivo quie contiene datos dentro del servidor.
+Y al igual que el fichero previamente descrito, tiene un tamaño mayor al ser un archivo que contiene datos dentro del servidor.
