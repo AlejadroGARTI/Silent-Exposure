@@ -29,7 +29,7 @@ El protocolo está abierto en el puerto 68, tal como se puede observar en la tab
 ---
 
 ## 3) ¿Qué porcentaje de disco está siendo usando por el sistema?
-El procentaje se observa mediante `df -h` y es importante conocer este elemento por que el espacio en disco es un recurso finito y crítico cuya saturación puede ser síntoma de un ataque o vector para inhabilitar defensas.
+El procentaje se observa mediante `df -h` y es importante conocer este elemento porque el espacio en disco es un recurso finito y crítico cuya saturación puede ser síntoma de un ataque o vector para inhabilitar defensas.
 
 ```bash
 Filesystem      Size  Used Avail Use% Mounted on
@@ -45,7 +45,7 @@ tmpfs            97M     0   97M   0% /run/user/1000
 ---
 
 ## 4) ¿Cuántos kilobytes hay disponible en el disco del sistema?
-El espacio disponible en el sistema es de 16895960 kilobytes, o de 17GiB, tal como se observa en la pregunta anterior.
+El espacio disponible en el sistema es de `16895960 KB`, o de `17 GiB`, tal como se observa en la pregunta anterior.
 
 ```bash
 dnedry@lab-nublar-os:~$ df -a
@@ -89,7 +89,7 @@ Se puede averiguar mediante el comando: `ps -u www-data -f`, que nos devuelve:
 UID        PID  PPID  C STIME TTY          TIME CMD
 www-data   691     1  0 04:39 ?        00:00:00 /usr/sbin/lighttpd -D -f /etc/lighttpd/lighttpd.conf
 ```
-Es importante conocer qué procesos ejecuta el usuario www-data porque este es el usuario predeterminado bajo el que suelen correr los servidores web (como Apache, Nginx o Lighttpd), por lo que si un atacante logra explotar una vulnerabilidad en la web, obtendrá acceso como www-data. Revisar sus procesos permite detectar actividades anómalas o maliciosas, como shells reversas, descargas de exploits o herramientas de persistencia que el atacante haya dejado ejecutándose en el sistema.
+Es importante conocer qué procesos ejecuta el usuario www-data porque este es el usuario predeterminado bajo el que suelen correr los servidores web (como Apache, Nginx o Lighttpd), por lo que si un atacante logra explotar una vulnerabilidad en la web, obtendrá acceso como www-data. Revisar sus procesos permite detectar actividades anómalas o maliciosas, como conexiones inversas, descargas de exploits o herramientas de persistencia que el atacante haya dejado ejecutándose en el sistema.
 
 ---
 
@@ -112,7 +112,7 @@ ufw.service - Uncomplicated firewall
     CGroup: /system.slice/ufw.service
 ```
 
-Saber que el firewall UFW está activo permite al atacante entender qué defensas tiene que sortear antes incluso de intentar escalar privilegios, por lo que, unque no se pueden modificar las reglas del firewall sin sudo, el simple hecho de saber que está activo indica que ciertos puertos pueden estar bloqueados, que la comunicación saliente podría estar restringida, o que hay políticas de denegación por defecto. Esto es crucial para planear movimientos laterales o establecer conexiones de callback sin que el firewall las bloquee.
+Saber que el firewall UFW está activo permite al atacante entender qué defensas tiene que sortear antes incluso de intentar escalar privilegios, por lo que, aunque no se pueden modificar las reglas del firewall sin sudo, el simple hecho de saber que está activo indica que ciertos puertos pueden estar bloqueados, que la comunicación saliente podría estar restringida, o que hay políticas de denegación por defecto. Esto es crucial para planear movimientos laterales o establecer conexiones de callback sin que el firewall las bloquee.
 
 ---
 
@@ -122,12 +122,12 @@ Mediante `apt --version`, vemos que el paquete tiene la versión: `apt 1.2.32ubu
 ---
 
 ## 9) ¿Qué prioridad tiene el paquete apt para el sistema?
-Mediante `apt show apt`, podemos observar que: (Priority: important), en donde la prioridad important indica que apt es un paquete esencial para el funcionamiento del sistema y que sin apt, no se pueden instalar, actualizar ni eliminar paquetes de software. Esto significa que cualquier vulnerabilidad o manipulación en apt podría comprometer gravemente todo el sistema operativo. 
+Mediante `apt show apt`, podemos observar que: `(Priority: important)`, en donde la prioridad important indica que apt es un paquete esencial para el funcionamiento del sistema y que sin apt, no se pueden instalar, actualizar ni eliminar paquetes de software. Esto significa que cualquier vulnerabilidad o manipulación en apt podría comprometer gravemente todo el sistema operativo. 
 
 ```bash
 dnedry@lab-nublar-os:~$ apt show apt
 Package: apt
-Version: 1.2.35
+Version: 1.2.32
 Priority: important
 Section: admin
 Origin: Ubuntu
