@@ -87,7 +87,7 @@ Cuando se intenta cambiar de usuario con comandos como `sudo su`, `sudo -i`, `su
 ## 2) ¿Qué herramienta es vulnerable?
 La herramienta vulnerable es tar, tal como se demostró anteriormente en el análisis de vulnerabilidades.
 
-Esta mala configuración de privilegios, combinada con las funcionalidades legítimas de tar documentadas en GTFOBins, permite la escalada de privilegios.
+Esta mala configuración de privilegios, combinada con las funcionalidades legítimas de tar documentadas en GTFOBins y las versiones desactualizadas del sistema, permiten la escalada de privilegios.
 
 ---
 
