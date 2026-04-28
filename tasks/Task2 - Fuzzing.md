@@ -14,11 +14,50 @@ Se realizó un reconocimiento inicial sobre el servidor web objetivo para identi
 ## 1) ¿Cuantos ficheros tiene el servidor con dirb?
 Una vez que se obtiene el fichero, se procede a usar 
 
-`dirb http[:]//10.129.183.158 /home/kali/Downloads/wordlist.txt`
+`dirb http[:]//10.130.178.202 /home/kali/Downloads/wordlist.txt`
 
 En este caso DIRB encontró 17 rutas accesibles en el servidor mediante un proceso de fuerza bruta de directorios y archivos usando una wordlist(fichero descargado previamente). Estas rutas representan posibles directorios o ficheros expuestos a través de HTTP, pero no reflejan el sistema de archivos completo del servidor, sino únicamente lo que está públicamente accesible desde la web.
 
 ```bash
+┌──(kali㉿kali)-[~]
+└─$ dirb http://10.130.178.202 /home/kali/Downloads/wordlist.txt 
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+START_TIME: Tue Apr 28 13:03:19 2026
+URL_BASE: http://10.130.178.202/
+WORDLIST_FILES: /home/kali/Downloads/wordlist.txt
+
+-----------------
+
+GENERATED WORDS: 1018                                                          
+
+---- Scanning URL: http://10.130.178.202/ ----
++ http://10.130.178.202/cfg~ (CODE:403|SIZE:345)                                                      
++ http://10.130.178.202/cfg.php~ (CODE:403|SIZE:345)                                                  
++ http://10.130.178.202/conf~ (CODE:403|SIZE:345)                                                     
++ http://10.130.178.202/config~ (CODE:403|SIZE:345)                                                   
++ http://10.130.178.202/configgconfig.php~ (CODE:403|SIZE:345)                                        
++ http://10.130.178.202/config.inc.php~ (CODE:403|SIZE:345)                                           
++ http://10.130.178.202/config.php.bak (CODE:200|SIZE:2160)                                           
++ http://10.130.178.202/configuration~ (CODE:403|SIZE:345)                                            
++ http://10.130.178.202/configuration.inc.php~ (CODE:403|SIZE:345)                                    
++ http://10.130.178.202/conf.inc.php~ (CODE:403|SIZE:345)                                             
++ http://10.130.178.202/database.php~ (CODE:403|SIZE:345)                                             
++ http://10.130.178.202/Db.php~ (CODE:403|SIZE:345)                                                   
++ http://10.130.178.202/functions.php~ (CODE:403|SIZE:345)                                            
++ http://10.130.178.202/index.php~ (CODE:403|SIZE:345)                                                
++ http://10.130.178.202/.php~ (CODE:403|SIZE:345)                                                     
++ http://10.130.178.202/security.zip (CODE:200|SIZE:2109)                                             
++ http://10.130.178.202/sliding_contact.php~ (CODE:403|SIZE:345)                                      
+                                                                                                      
+-----------------
+END_TIME: Tue Apr 28 13:04:13 2026
+DOWNLOADED: 1018 - FOUND: 17
+
 ```
 
 ---
