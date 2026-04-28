@@ -85,7 +85,7 @@ Se ejecuta la funcion `Interceptor de Sudo (Efecto Magic Word)` e imprime por pa
 ---
 
 ## 2) ¿Qué herramienta es vulnerable?
-La herramienta vulnerable es tar, tal como se mostró anteriormente en el análisis de la vulnerabilidad.
+La herramienta vulnerable es tar, tal como se demostró anteriormente en el análisis de vulnerabilidades.
 
 ---
 
