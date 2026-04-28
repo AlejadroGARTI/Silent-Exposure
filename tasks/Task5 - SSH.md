@@ -136,7 +136,7 @@ SUPPORT_URL="http://help.ingen.com/"
 BUG_REPORT_URL="http://bugs.ingen.com/"
 ```
 
-Saber que InGenOS está basado en securityos permite al atacante o al auditor investigar qué vulnerabilidades conocidas afectan a esa distribución base, por lo que si, securityos es una derivada de alguna distribución más conocida (como Debian, Ubuntu, CentOS o Alpine), se pueden buscar exploits públicos, configuraciones inseguras comunes o técnicas de escalada de privilegios específicas de esa familia. Por ejemplo, si securityos está basado en Debian, el atacante sabe que puede usar comandos como apt para instalar herramientas, que los logs están en /var/log/ y que la política de sudo está en /etc/sudoers.
+Saber que InGenOS está basado en securityos permite al atacante o al auditor investigar qué vulnerabilidades conocidas afectan a esa distribución base, por lo que si, securityos es una derivada de alguna distribución más conocida (como Debian, Ubuntu, CentOS o Alpine), se pueden buscar exploits públicos, configuraciones inseguras comunes o técnicas de escalada de privilegios específicas de esa familia.
 
 ---
 
