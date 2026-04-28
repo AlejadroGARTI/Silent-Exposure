@@ -89,7 +89,12 @@ BUG_REPORT_URL="http://bugs.ingen.com/"
 ---
 
 ## 9) ¿A qué grupos pertenece el usuario?
-El usuario pertenece a los grupos: uid=1000(dnedry) gid=1000(dnedry) groups=1000(dnedry),4(adm),24(cdrom),30(dip),46(plugdev),114(lpadmin),115(sambashare)
+El usuario pertenece a los grupos: 
+
+```bash
+dnedry@lab-nublar-os:~$ id
+uid=1000(dnedry) gid=1000(dnedry) groups=1000(dnedry),4(adm),24(cdrom),30(dip),46(plugdev),114(lpadmin),115(sambashare)
+```
 
 Saber esto es crucial para definir las capacidades reales que tiene el usuario dentro del sistema.
 
