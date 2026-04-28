@@ -156,6 +156,6 @@ Esto se debe a que al ser un recurso real y accesible que contiene datos legíti
 
 ## 7) ¿Cómo se llama el fichero que tiene un tamaño inferior al mayor?
 El segundo fichero de mayor tamaño es: 
-- security.zip         (Status: 200) [Size: 2109]
+`- security.zip         (Status: 200) [Size: 2109]`
 
 Y al igual que el fichero previamente descrito, tiene un tamaño mayor al ser un archivo quie contiene datos dentro del servidor.
