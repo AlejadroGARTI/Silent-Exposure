@@ -11,6 +11,26 @@ Se realiza un escaneo de servicios para identificar puertos abiertos y versiones
 
 Este comando se utiliza para escanear un objetivo en busca de puertos abiertos y servicios activos. La opción `-sC` ejecuta scripts básicos de Nmap para obtener información adicional automáticamente, mientras que `-sV` identifica las versiones de los servicios detectados. Finalmente, la dirección IP indica el host que se está analizando
 
+```bash
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-04-28 13:16 CEST
+Nmap scan report for 10.130.178.202
+Host is up (0.061s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 76:a5:00:60:8f:65:e5:96:f1:80:37:15:8b:1a:a1:fd (RSA)
+|   256 2a:c5:2b:8f:6e:54:4a:fa:cc:21:10:c7:3e:d1:37:6d (ECDSA)
+|_  256 2f:52:ed:93:3d:71:94:5f:eb:62:76:21:68:6b:6d:9d (ED25519)
+80/tcp open  http    lighttpd 1.4.35
+|_http-title: Security Warning Simulation
+|_http-server-header: lighttpd/1.4.35
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 9.05 seconds
+```
+
 ---
 
 ## 1) ¿A través de qué puerto se comunica el servidor?
