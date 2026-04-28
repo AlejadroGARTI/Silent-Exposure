@@ -94,7 +94,7 @@ Esta mala configuración de privilegios, combinada con las funcionalidades legí
 ## 3) ¿Cuál es la flag de root?
 La flag de root es YOU.C4N.D0.1T, obtenida a traves de `cat '/root/\r00t\'`
 
-Aunque, también se puede obtener mediante `grep -R "." /root 2>/dev/null`, esto debido a que analizando el formato de la FLAG previamente, ya que se encuentra en la página del ejercicio, se sabe que tiene un punto en su estructura, por lo que al conocer datos que podrían ser insignificantes, se puede realizar una busqueda para buscar formatos, en donde tenemos el resultado: 
+Aunque, también se puede obtener mediante `grep -R "." /root 2>/dev/null`, esto debido a que, analizando el formato de la FLAG previamente ya que se encuentra en la página del ejercicio, se sabe que tiene un punto en su estructura, por lo que al conocer datos que podrían ser insignificantes, se puede realizar una busqueda para buscar formatos en el texto dentro de los archivos, en donde tenemos el resultado: 
 
 ```bash
 /root/.profile:# ~/.profile: executed by Bourne-compatible login shells.
