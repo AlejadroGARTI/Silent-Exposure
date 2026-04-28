@@ -13,6 +13,88 @@ Se analiza el primer fichero encontrado en el paso anterior, por lo que para con
 
 En este caso transfiere los datos a través del protocolo HTTP desde la página web. Mostrando de esta forma toda la información del fichero.
 
+```bash
+curl http://10.130.178.202/config.php.bak 
+<?php
+/**
+ * The base configuration for the InGen Intranet
+ *
+ * WARNING: UNAUTHORIZED ACCESS TO THIS FILE IS STRICTLY PROHIBITED.
+ * Dennis, I've told you three times to stop leaving backup files 
+ * in public directories. Secure this immediately! - Ray Arnold
+ *
+ * This file contains the following configurations:
+ *
+ * * Settings
+ * * Secret keys
+ * * Database table prefix
+ * * ABSPATH
+ *
+ * @package InGen_Intranet
+ */
+
+// ** Server settings - Main Park Operations ** //
+/** The name of the for InGen Intranet */
+define('NAME', 'ingen_park_ops');
+
+/** Server username */
+define('USER', 'dnedry');
+
+/** Security password */
+define('PASSWORD', 'Wht3_Rbt_0bj_1993!');
+
+/** hostname */
+define('HOST', 'localhost');
+
+/** Charset to use in creating tables. */
+define('CHARSET', 'utf8mb4');
+
+/** The Collate type. Don't change this if in doubt. */
+define('COLLATE', '');
+
+/**#@+
+ * Authentication Unique Keys and Salts.
+ *
+ * InGen Security protocols require these to be completely random.
+ *
+ * @since 1993.0
+ */
+define('AUTH_KEY',         '&D5bY9KL_lD(GDIePp*o&^~K');
+define('SECURE_AUTH_KEY',  'NR;@e/,/!cqzLP@+`C');
+define('LOGGED_IN_KEY',    ']2,WH2?ObnBe{1dSO#lS0~GnM/FL');
+define('NONCE_KEY',        'N{OuK9:[GVte*?6=%3OsNKjz1P=O*vL5');
+define('AUTH_SALT',        'tF}YpjS^OkC%xP^NEt|PlNP4bTdr');
+define('SECURE_AUTH_SALT', 'IYl(@rblISw?to/DR');
+define('LOGGED_IN_SALT',   '!+:WvG7k4%NC3bq!1oqXK{');
+define('NONCE_SALT',       'b(DU{{YDRgEk3})&]I0N`egT7bEJCPymX.');
+/**#@-*/
+
+/**
+ * InGen Database Table prefix.
+ *
+ * You can have multiple installations in one database if you give each
+ * a unique prefix. Only numbers, letters, and underscores please!
+ */
+$table_prefix = 'ingen_';
+
+/**
+ * For developers: Debugging mode.
+ * * Ray, leave this on true while I fix the vending machines. 
+ * I am compiling some code and need to see the errors. - Nedry
+ */
+define('WP_DEBUG', true);
+
+/* That's all, stop editing! Welcome to Jurassic Park. */
+
+/** Absolute path to the intranet directory. */
+if ( !defined('ABSPATH') ) {
+        define('ABSPATH', dirname(__FILE__) . '/');
+}
+
+/** Sets up park keys and included files. */
+require_once(ABSPATH . 'public_key.asc');
+```
+
 ---
 
 ## 1) ¿Qué principio de la tríada CIA+ se ve afectado por un Data Breach de información?
@@ -25,6 +107,7 @@ La intranet es una red privada interna de una organización, accesible solo para
 
 Este y otros datos listados más adelante se pueden ver en formato de texto plano de la siguiente manera: 
 
+```bash
 // ** Server settings - Main Park Operations ** //
 
 /** The name of the for InGen Intranet */
@@ -40,6 +123,7 @@ define('PASSWORD', 'Wht3_Rbt_0bj_1993!');
 define('HOST', 'localhost');
 
 etc...
+```
 
 ---
 
