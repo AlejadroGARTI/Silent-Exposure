@@ -10,6 +10,17 @@
 2) Lo descomprimimos usando la clave recuperada del fichero config.php.bak
 3) Obtenemos la información mediante: `gpg --import --import-options show-only public_key.asc`
 
+```bash 
+┌──(kali㉿kali)-[~]
+└─$ gpg --import --import-options show-only public_key.asc
+gpg: keybox '/home/kali/.gnupg/pubring.kbx' created
+gpg: /home/kali/.gnupg/trustdb.gpg: trustdb created
+pub   rsa3072 2026-04-18 [SC]
+      1E8176A69B558BAB0D059E87032F03187B650702
+uid                      Dennis Nedry (La key del Lab: L3Dodgson5 <dnedry@ingen.com>) <dnedry@ingen.com>
+sub   rsa3072 2026-04-18 [E]
+```
+
 ---
 
 ## 1) ¿Cuál es la contraseña del fichero?
@@ -25,10 +36,12 @@ Está basado en Estándar ASCII, el cual es un código de caracteres que asigna 
 ## 3) ¿Cuál es el inicio de la clave pública?
 El inicio de la clave pública se puede visualizar mediante `less public_key.asc`, en donde se puede observar: 
 
+```bash
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQGNBGnjWv4BDACqYvlAtc9o3Lve1YOUvgHphHCKyCLIy2swF1PDE0FR39n15H01
 PiJ4i/60nQzU6UG+kiRO3p2D6TUzXVK+3acnaO9hc....
+```
 
 Una public key o clave pública es una clave criptográfica que forma parte de la criptografía asimétrica y puede compartirse libremente con otras personas y su función principal es permitir que otros cifren mensajes destinados a ti o verifiquen firmas digitales que se hayan creado con una clave privada. Aunque cualquiera puede usarla, solo la clave privada correspondiente puede descifrar la información o generar la firma válida.
 
