@@ -44,8 +44,41 @@ tmpfs            97M     0   97M   0% /run/user/1000
 
 ---
 
-## 4) ¿Cuántos bytes hay disponible en el disco del sistema?
-El código de error es 
+## 4) ¿Cuántos kilobytes hay disponible en el disco del sistema?
+El espacio disponible en el sistema es de: 
+
+```bash
+dnedry@lab-nublar-os:~$ df -a
+Filesystem     1K-blocks    Used Available Use% Mounted on
+sysfs                  0       0         0    - /sys
+proc                   0       0         0    - /proc
+udev              475664       0    475664   0% /dev
+devpts                 0       0         0    - /dev/pts
+tmpfs              99116    3688     95428   4% /run
+/dev/nvme0n1p1  19480532 1569688  16895960   9% /
+securityfs             0       0         0    - /sys/kernel/security
+tmpfs             495560       0    495560   0% /dev/shm
+tmpfs               5120       0      5120   0% /run/lock
+tmpfs             495560       0    495560   0% /sys/fs/cgroup
+cgroup                 0       0         0    - /sys/fs/cgroup/systemd
+pstore                 0       0         0    - /sys/fs/pstore
+cgroup                 0       0         0    - /sys/fs/cgroup/perf_event
+cgroup                 0       0         0    - /sys/fs/cgroup/pids
+cgroup                 0       0         0    - /sys/fs/cgroup/hugetlb
+cgroup                 0       0         0    - /sys/fs/cgroup/cpuset
+cgroup                 0       0         0    - /sys/fs/cgroup/freezer
+cgroup                 0       0         0    - /sys/fs/cgroup/cpu,cpuacct
+cgroup                 0       0         0    - /sys/fs/cgroup/net_cls,net_prio
+cgroup                 0       0         0    - /sys/fs/cgroup/blkio
+cgroup                 0       0         0    - /sys/fs/cgroup/memory
+cgroup                 0       0         0    - /sys/fs/cgroup/devices
+systemd-1              0       0         0    - /proc/sys/fs/binfmt_misc
+fusectl                0       0         0    - /sys/fs/fuse/connections
+debugfs                0       0         0    - /sys/kernel/debug
+mqueue                 0       0         0    - /dev/mqueue
+hugetlbfs              0       0         0    - /dev/hugepages
+tmpfs              99116       0     99116   0% /run/user/1000
+```
 
 ---
 
