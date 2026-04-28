@@ -18,7 +18,7 @@ La contraseña del fichero es "Wht3_Rbt_0bj_1993!", la cual fue recuperada de co
 ---
 
 ## 2) ¿En qué está basado el fichero que se ha obtenido?
-El 
+Está basado en Estándar ASCII, el cual es un código de caracteres que asigna números del 0 al 127 a letras, dígitos, signos de puntuación y controles, permitiendo que computadoras y dispositivos intercambien texto de forma universal.
 
 ---
 
