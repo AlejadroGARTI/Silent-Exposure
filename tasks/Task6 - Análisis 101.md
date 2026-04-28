@@ -1,13 +1,13 @@
 # Task 6 Análisis del sistema 101
 
 ## Información general 
-- **Herramientas utilizadas:**  
+- **Herramientas utilizadas:** Inspección manual y análisis de metadatos de clave GPG
 
 ---
 
 ## Investigación Inicial
 
-Se 
+Se emplearon herramientas de análisis estático y comandos básicos de Linux.
 
 ---
 
