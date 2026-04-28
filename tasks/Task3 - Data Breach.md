@@ -98,7 +98,7 @@ require_once(ABSPATH . 'public_key.asc');
 ---
 
 ## 1) ¿Qué principio de la tríada CIA+ se ve afectado por un Data Breach de información?
-Se ve afectada la Confidencialida, ya que implica un acceso no autorizado a información sensible medainte la lectura de ambos ficheros, aunque también puede comprometer la Integridad si los datos se modifican y la Disponibilidad si se destruyen o cifran con ransomware.
+Se ve afectada la Confidencialidad, ya que implica un acceso no autorizado a información sensible mediante la lectura de ambos ficheros, aunque también puede comprometer la Integridad si los datos se modifican y la Disponibilidad si se destruyen o cifran con ransomware.
 
 ---
 
@@ -138,12 +138,12 @@ Se usa `utf8mb4` y es un juego de caracteres que soporta todos los caracteres Un
 ---
 
 ## 5) Cuál es la AUTH_KEY del sistema?
-Esta es la clave criptográfica única que se usa en WordPress para cifrar cookies de sesión y autenticación, aumentando la seguridad contra ataques de suplantación. La clave sería: &D5bY9KL_lD(GDIePp*o&^~K y en este caso, AUTH_KEY probablemente protege las cookies de autenticación normales del inicio de sesión estándar.
+Esta es la clave criptográfica única que se usa en WordPress para cifrar cookies de sesión y autenticación, aumentando la seguridad contra ataques de suplantación. La clave sería: **`&D5bY9KL_lD(GDIePp*o&^~K`** y en este caso, AUTH_KEY probablemente protege las cookies de autenticación normales del inicio de sesión estándar.
 
 ---
 
 ## 6) ¿Cuál es la SECURE_AUTH_KEY del sistema?
-La definición sería igual que la AUTH_KEY, solo que en este caso la SECURE_AUTH_KEY probablemente protege específicamente las cookies enviadas por HTTPS y estaría dada por: NR;@e/,/!cqzLP@+`C
+La definición sería igual que la AUTH_KEY, solo que en este caso la SECURE_AUTH_KEY probablemente protege, específicamente, a las cookies enviadas por HTTPS y estaría dada por: **`"NR;@e/,/!cqzLP@+`C`**
 
 ---
 
@@ -152,5 +152,5 @@ El prefijo es una cadena añadida al inicio de cada tabla para identificar las t
 
 ---
 
-## 8) ¿Qué fichero contiene las clave del parque?
-EL fichero con claves es un rchivo que almacena las claves de seguridad, credenciales de BD y configuraciones sensibles del sistema, y estaría dado por: public_key.asc
+## 8) ¿Qué fichero contiene las claves del parque?
+EL fichero con claves es un archivo que almacena las claves de seguridad, credenciales de BD y configuraciones sensibles del sistema, y estaría dado por: public_key.asc
