@@ -14,8 +14,10 @@ Se
 ## 1) ¿Cuál es el admistrador del sistema?
 El administrador es dnedry, mismo usuario que encontramos inspeccionando el .bak, en el campo: 
 
+```bash
 /** Server username */
 define('USER', 'dnedry');
+```
 
 ---
 
@@ -54,6 +56,7 @@ El hostnanme es: lab-nublar-os, y se obtiene al escribir  `hostname`.
 ## 8) Según la información del sistema, ¿en qué tipo de distribución está basado InGenOS?
 Esta basado en securityos, ya que mediante el comando `cat /etc/os-release`, obtenemos:
 
+```bash
 - NAME="InGenOS (Jurassic Park Control System)"
 - VERSION="1.0.4 (Nublar Edition)"
 - ID=ingenos
