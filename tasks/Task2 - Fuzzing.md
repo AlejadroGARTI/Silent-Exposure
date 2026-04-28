@@ -142,7 +142,7 @@ El código de error predominante en el escaneo es el 403  que significa Forbidde
 ---
 
 ## 5) ¿Cuál es la flag para que no muestre los ficheros erróneos en dirb?
-El comando utilizado para que no se muestren estos ficheros es el **`-N 403`**. Con este comando, dirb realizará el escaneo de manera normal, pero no te mostrará en la lista final ningún directorio o archivo que devuelva un error 403, limpiando así la salida y permitiendo identificar más fácilmente los recursos a los que realmente se tiene acceso.
+El comando utilizado para que no se muestren estos ficheros es el **`-N 403`**. Con este comando, dirb realizará el escaneo de manera normal, pero no mostrará en la lista final ningún directorio o archivo que devuelva un error 403, limpiando así la salida y permitiendo identificar más fácilmente los recursos a los que realmente se tiene acceso.
 
 ---
 
