@@ -31,7 +31,7 @@ Se identificó que la clave pública GPG contenía información sensible en su c
 ---
 
 ## 3) ¿A que directorio se accede por defecto?
-Se accede al directorio /home/dnedry, esto se puede saber utilizando el comando: dnedry@lab-nublar-os:~$ `pwd`
+Se accede al directorio `/home/dnedry`, esto se puede saber utilizando el comando: `dnedry@lab-nublar-os:~$ pwd`
 
 Saber que el directorio por defecto es /home/dnedry confirma que el usuario dnedry tiene una cuenta doméstica estándar en el sistema, lo que valida que no se trata de un usuario temporal o de servicio; esto permite deducir que dnedry es un usuario humano real con capacidad de almacenar archivos personales, scripts de automatización o credenciales adicionales en su propio espacio.
 
