@@ -65,20 +65,74 @@ DOWNLOADED: 1018 - FOUND: 17
 ## 2) ¿Cuantos ficheros tiene el servidor con Gobuster?
 En cambio, con Gobuster, se utilizó el comando 
 
-`gobuster dir -u http[:]//10.129.183.158 -w /home/kali/Downloads/wordlist.txt` 
+`gobuster dir -u http[:]//10.130.178.202 -w /home/kali/Downloads/wordlist.txt` 
 
 Mediante este se enumeraron directorios y archivos en el servidor web y la herramienta identificó múltiples rutas, incluyendo archivos con código fuente y copias de seguridad. Algunas rutas devolvieron código 403 (Forbidden), indicando que existen en el servidor pero no son accesibles directamente. Otras rutas, como security.zip y config.php.bak, devolvieron código 200, lo que indica que son accesibles públicamente y podrían contener información sensible.
-Algunos ejemplos de estas rutas son: 
-- config.php.bak         (Status: 200) [Size: 2160]
-- configuration.inc.php~ (Status: 403) [Size: 345]
-- configuration~         (Status: 403) [Size: 345]
+
+```bash
+┌──(kali㉿kali)-[~]
+└─$ gobuster dir -u http://10.130.178.202 -w /home/kali/Downloads/wordlist.txt 
+===============================================================
+Gobuster v3.8
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.130.178.202
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /home/kali/Downloads/wordlist.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.8
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+/cfg~                 (Status: 403) [Size: 345]
+/cfg.php~             (Status: 403) [Size: 345]
+/configgconfig.php~   (Status: 403) [Size: 345]
+/config~              (Status: 403) [Size: 345]
+/conf~                (Status: 403) [Size: 345]
+/config.php.bak       (Status: 200) [Size: 2160]
+/config.inc.php~      (Status: 403) [Size: 345]
+/configuration.inc.php~ (Status: 403) [Size: 345]
+/configuration~       (Status: 403) [Size: 345]
+/conf.inc.php~        (Status: 403) [Size: 345]
+/database.php~        (Status: 403) [Size: 345]
+/Db.php~              (Status: 403) [Size: 345]
+/functions.php~       (Status: 403) [Size: 345]
+/index.php~           (Status: 403) [Size: 345]
+/.php~                (Status: 403) [Size: 345]
+/security.zip         (Status: 200) [Size: 2109]
+/sliding_contact.php~ (Status: 403) [Size: 345]
+/cfg~                 (Status: 403) [Size: 345]
+/cfg.php~             (Status: 403) [Size: 345]
+/conf~                (Status: 403) [Size: 345]
+/config~              (Status: 403) [Size: 345]
+/config.inc.php~      (Status: 403) [Size: 345]
+/configgconfig.php~   (Status: 403) [Size: 345]
+/configuration.inc.php~ (Status: 403) [Size: 345]
+/configuration~       (Status: 403) [Size: 345]
+/conf.inc.php~        (Status: 403) [Size: 345]
+/database.php~        (Status: 403) [Size: 345]
+/Db.php~              (Status: 403) [Size: 345]
+/functions.php~       (Status: 403) [Size: 345]
+/index.php~           (Status: 403) [Size: 345]
+/.php~                (Status: 403) [Size: 345]
+/sliding_contact.php~ (Status: 403) [Size: 345]
+Progress: 2029 / 2029 (100.00%)
+===============================================================
+Finished
+===============================================================         
+```
 
 ---
 
 ## 3) ¿Cuál es el código correcto?
 El código de estado HTTP correcto (éxito) que aparece en los resultados es el 200, el cual se muestra únicamente para los archivos config.php.bak y security.zip. Esto indica que ambos recursos existen en el servidor y son accesibles.
-- config.php.bak       (Status: 200) [Size: 2160]
-- security.zip         (Status: 200) [Size: 2109]
+
+```bash
+config.php.bak       (Status: 200) [Size: 2160]
+security.zip         (Status: 200) [Size: 2109]
+```
 
 ---
 
