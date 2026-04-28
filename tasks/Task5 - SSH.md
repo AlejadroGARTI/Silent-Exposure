@@ -34,6 +34,8 @@ Se accede al directorio /home/dnedry, esto se puede saber utilizando el comando:
 ## 4) ¿Cuántos usuarios existen en el sistema?
 Contando los usuarios medainte el comando: `wc -l /etc/passwd`, tenemos un total de 28 usuarios
 
+Saber la cantidad de usuarios en un sistema es importante porque permite evaluar la superficie de ataque, ya que cada usuario adicional (especialmente si tiene privilegios, claves débiles o está inactivo) es un posible punto de entrada para un atacante, además un número anormalmente alto o bajo puede indicar huellas de un intruso que creó cuentas ocultas, o por el contrario, falta de control de accesos.
+
 ---
 
 ## 5) ¿Cuál es el nombre completo del usuario?
