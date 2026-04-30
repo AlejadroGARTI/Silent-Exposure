@@ -14,7 +14,7 @@ Con las credenciales obtenidas, se estableció una conexión SSH al servidor rem
 ---
 
 ## 1) ¿Cuál es el administrador del sistema?
-El administrador es dnedry, mismo usuario que encontramos inspeccionando el .bak, en el campo: 
+El administrador es dnedry, mismo usuario que se encontró inspeccionando el .bak, en el campo: 
 
 ```bash
 /** Server username */
